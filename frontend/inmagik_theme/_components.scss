@@ -1,0 +1,35 @@
+@media (max-width: 768px){
+ .navbar-toggleable-sm {
+    ul {
+      padding-top: 60px;
+    }
+  }
+}
+
+.navbar-light {
+      letter-spacing: 1.1px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: 'Montserrat','Helvetica Neue',Arial,sans-serif;
+      background-color: $white;
+
+      ul {
+        text-align: center;
+        li {
+          color: black;
+          ::selection {
+             text-shadow: none;
+             color: $brand-primary;
+             background: $white;
+            }
+        }
+      }
+}
+
+.img-navbar-logo{
+  height:36px; width:36px;
+}
+
+.tech-card {
+  height: 250px;
+}
