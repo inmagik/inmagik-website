@@ -30,6 +30,14 @@
   height:36px; width:36px;
 }
 
-.tech-card {
-  height: 250px;
+.img-tech {
+  height: 150px;
+  width: auto;
+  max-width: 240px;
+  margin: 24px,
+}
+
+.tech {
+  border: $border-thin;
+  padding: 20px;
 }
