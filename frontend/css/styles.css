@@ -4791,7 +4791,7 @@ body {
       opacity: 1; }
 
 a {
-  color: #007FFF;
+  color: deepskyblue;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s; }
@@ -4887,7 +4887,7 @@ footer h4, footer h6 {
 
 .navbar-default .nav .nav-link.active,
 .navbar-default .nav .nav-link.active:focus {
-  color: #007FFF !important;
+  color: deepskyblue !important;
   background-color: transparent; }
 
 /* responsive nav */
@@ -4995,11 +4995,11 @@ textarea {
 
 .btn.btn-primary {
   background-color: transparent;
-  border: 1px solid #007FFF;
+  border: 1px solid deepskyblue;
   -webkit-transition: all .35s;
   -moz-transition: all .35s;
   transition: all .35s;
-  color: #007FFF; }
+  color: deepskyblue; }
 
 .btn.btn-primary:hover {
   opacity: 0.7; }

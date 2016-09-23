@@ -34,7 +34,7 @@ body {
 
 
 a {
-    color: #007FFF;
+    color: $a-color;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
@@ -153,7 +153,7 @@ footer h4, footer h6 {
 
 .navbar-default .nav .nav-link.active,
 .navbar-default .nav .nav-link.active:focus {
-    color: #007FFF !important;
+    color: $brand-primary !important;
     background-color: transparent;
 }
 
@@ -291,11 +291,11 @@ textarea {
 
 .btn.btn-primary {
     background-color: transparent;
-    border:1px solid #007FFF;
+    border:1px solid $brand-primary;
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
     transition: all .35s;
-    color:#007FFF;
+    color:$brand-primary;
 }
 
 .btn.btn-primary:hover {
