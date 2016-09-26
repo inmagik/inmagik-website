@@ -27,17 +27,38 @@
 }
 
 .img-navbar-logo{
-  height:36px; width:36px;
+  height:36px;
+  width:36px;
 }
 
 .img-tech {
-  height: 150px;
-  width: auto;
-  max-width: 240px;
-  margin: 24px,
+  max-height: 100px;
+  margin-top: 24px;
 }
 
-.tech {
-  border: $border-thin;
-  padding: 20px;
+.img-proj {
+  max-height: 210px;
+}
+ .img-blog-detail {
+   position: relative;
+ }
+
+ .thumbnail {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    top: 45%;
+    left: 0;
+    width: 100%;
+    color: $white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.author {
+  padding: 0.5rem;
+  background-color: #e0e0e3;
 }

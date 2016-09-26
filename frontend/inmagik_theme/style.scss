@@ -317,22 +317,22 @@ textarea {
 
 ::-moz-selection {
     text-shadow: none;
-    color: #fff;
+    color: $white;
     background: #222;
 }
 
 ::selection {
     text-shadow: none;
-    color: #fff;
+    color: $white;
     background: #222;
 }
 
 img::selection {
-    color: #fff;
+    color: $white;
     background: 0 0;
 }
 
 img::-moz-selection {
-    color: #fff;
+    color: $white;
     background: 0 0;
 }

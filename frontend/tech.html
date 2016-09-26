@@ -14,26 +14,34 @@
   <link href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="bg-faded">
 
-  <nav class="navbar navbar-fixed-top navbar-light">
-    <button class="navbar-toggler pull-xs-right hidden-lg-down-up hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-collapse">☰</button>
-    <a class="navbar-brand" href="index.html"><img class="img-navbar-logo" src="img/inmagik_circle2.png" alt="" /></a>
-    <div class="collapse navbar-toggleable-sm text-xs-center" id="navbar-collapse">
-      <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item"> <a class="nav-link" href="#">Tecnologia</a>
-        </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Progetti</a>
-        </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Contatti</a>
-        </li>
-      </ul>
-    </div>
+  <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+          <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+              ☰
+          </button>
+          <a class="navbar-brand page-scroll" href="index.html"><img class="img-navbar-logo" src="img/inmagik_circle2.png" alt="Inmagik logo" /></a>
+          <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
+              <ul class="nav navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll active" href="tech.html">Tecnologia</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="projects.html">Progetti</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link page-scroll" href="contacts.html">Contatti</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
   </nav>
 
   <section id="two" class="bg-alt">
@@ -55,7 +63,7 @@
           <div class="card-group">
               <!-- card -->
               <div class="card">
-                  <img class="img-fluid img-tech m-x-auto" src="img/python.png" alt="Card image cap">
+                  <img class="img-fluid img-tech m-x-auto" src="img/python-icon.png" alt="Card image cap">
                   <div class="card-block">
                       <h4 class="card-title text-xs-center">Python</h4>
                       <p class="card-text">Sviluppiamo applicazioni ibride e native per le piattaforme iOS e Android, utilizzando framework e tecnologie di ultima generazione.</p>
@@ -79,12 +87,10 @@
               </div>
           </div>
 
-          <hr>
-
           <div class="card-group">
               <!-- card -->
               <div class="card">
-                  <img class="img-fluid img-tech m-x-auto" src="img/django.png" alt="Card image cap">
+                  <img class="img-fluid img-tech m-x-auto" src="img/django-logo.png" alt="Card image cap">
                   <div class="card-block">
                       <h4 class="card-title text-xs-center">django</h4>
                       <p class="card-text">Sviluppiamo applicazioni ibride e native per le piattaforme iOS e Android, utilizzando framework e tecnologie di ultima generazione.</p>
@@ -100,7 +106,7 @@
               </div>
               <!-- card -->
               <div class="card">
-                  <img class="img-fluid img-tech m-x-auto" src="img/angular.png" alt="Card image cap">
+                  <img class="img-fluid img-tech m-x-auto" src="img/angularjs.png" alt="Card image cap">
                   <div class="card-block">
                       <h4 class="card-title text-xs-center">AngularJS</h4>
                       <p class="card-text">Lo sviluppo di siti e applicativi web, in tutte le sue declinazioni, è il nostro core business e sviluppiamo le nostre competenze intorno a questa attività.</p>
@@ -126,7 +132,7 @@
               </div>
               <!-- card -->
               <div class="card">
-                  <img class="img-fluid img-tech m-x-auto" src="img/sass-logo.png" alt="Card image cap">
+                  <img class="img-fluid img-tech m-x-auto" src="img/sass.png" alt="Card image cap">
                   <div class="card-block">
                       <h4 class="card-title text-xs-center">Sass</h4>
                       <p class="card-text">Lo sviluppo di siti e applicativi web, in tutte le sue declinazioni, è il nostro core business e sviluppiamo le nostre competenze intorno a questa attività.</p>
@@ -139,15 +145,15 @@
   </section>
 
 
-  <section id="two">
+  <section id="two" class="bg-alt">
     <div class="container">
        <div class="row">
-          <div class="col-xs-6 text-xs-center tech">
-            <img class="img-tech img-fluid m-x-auto" src="img/python.png" alt="" />
+          <div class="col-xs-6 text-xs-center">
+            <img class="img-tech img-fluid m-x-auto" src="img/python-icon.png" alt="" />
             <h4>Python</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
           </div>
-          <div class="col-xs-6 text-xs-center tech">
+          <div class="col-xs-6 text-xs-center">
             <img class="img-tech img-fluid m-x-auto" src="img/js.png" alt="" />
             <h4>Javascript</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
@@ -166,7 +172,7 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
           </div>
           <div class="col-xs-6 text-xs-center">
-            <img class="img-tech img-fluid m-x-auto" src="img/django.png" alt="" />
+            <img class="img-tech img-fluid m-x-auto" src="img/django-logo.png" alt="" />
             <h4>django</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
           </div>
