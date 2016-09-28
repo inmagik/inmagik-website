@@ -1,16 +1,43 @@
-{% extends "starter.html"%}
-{% load cms_content %}
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations %}
 
-{% block page_title %}Contact{% endblock %}
+{% block page_content %}
 
-{% block content %}
+<section id="last">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-xs-center">
+                <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
+                <hr class="primary">
+                <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+            <div class="col-lg-10 offset-lg-1 text-xs-center">
+                <form class="contact-form row">
+                    <div class="col-md-4">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-md-4">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-md-4">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="col-md-12">
+                        <label></label>
+                        <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                    </div>
+                    <div class="col-md-4 offset-md-4">
+                        <label></label>
+                        <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 
-{% include "navbar.html" %}
-
-<div class="container">
-    <h2>Contacts</h2>
-    {% cms_text_content "contacts_text" %}
-</div>
-
-
-{% endblock %}
+{% endblock page_content %}

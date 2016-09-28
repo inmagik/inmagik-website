@@ -7,7 +7,15 @@ SITE_PAGES = {
     },
 
     'technology' : {
-        'url' : 'technology',
+        'url' : 'tech',
+    },
+
+    'projects' : {
+        'url' : 'projects',
+    },
+
+    'blog' : {
+        'url' : 'blog',
     },
 
     'contact' : {
