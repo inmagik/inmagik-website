@@ -60,5 +60,27 @@
 
 .author {
   padding: 0.5rem;
-  background-color: #e0e0e3;
+  background-color: $brand-secondary;
+}
+
+.date {
+  font-size: 14px;
+  color: $brand-secondary;
+  font-style: italic;
+}
+
+.foot {
+  color: $white;
+  background-color: $brand-primary;
+  a {
+    color: $white;
+    font-weight: normal;
+  }
+  h6 {
+    color: $white;
+  }
+}
+
+.foot-link {
+  font-size: 14px;
 }
