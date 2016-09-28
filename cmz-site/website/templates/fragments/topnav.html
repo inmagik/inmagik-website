@@ -1,25 +1,26 @@
 {% load static from staticfiles %}
+{% load cmz_translations %}
 
 <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
             ☰
         </button>
-        <a class="navbar-brand page-scroll" href="{% url 'home' %}"><img class="img-navbar-logo" 
+        <a class="navbar-brand page-scroll" href="{% url 'home' %}"><img class="img-navbar-logo"
           src="{% static 'img/inmagik_circle2.png' %}" alt="Inmagik logo" /></a>
         <div class="collapse navbar-toggleable-sm" id="collapsingNavbar">
             <ul class="nav navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'technology' %}">Tecnologia</a>
+                    <a class="nav-link page-scroll" href="{% url 'technology' %}">{% cmz_translation "tech" "navbar" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="projects.html">Progetti</a>
+                    <a class="nav-link page-scroll" href="projects.html">{% cmz_translation "projects" "navbar" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="blog.html">Blog</a>
+                    <a class="nav-link page-scroll" href="blog.html">{% cmz_translation "blog" "navbar" "blog" %}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="contacts.html">Contatti</a>
+                    <a class="nav-link page-scroll" href="contacts.html">{% cmz_translation "contact" "navbar" %}</a>
                 </li>
             </ul>
         </div>
