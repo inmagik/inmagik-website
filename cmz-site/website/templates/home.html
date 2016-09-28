@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations %}
+
+{% block page_content %}
+
+<header id="first">
+<div class="header-content">
+    <div class="inner">
+        <h1>INMAGIK</h1>
+        <h5 class="wow fadeIn text-normal wow fadeIn">software solutions | web & mobile apps | data viz & management | interactive ux </h5>
+        <a href="#one" class="btn btn-primary-outline btn-xl page-scroll wow fadeInUp m-t-3">Get in Touch with Us</a>
+    </div>
+</div>
+</header>
+
+<section id="one">
+       <div class="container wow fadeInUp">
+        <h2 class="text-xs-center">{% cmz_translation "about-us-title" "home" %}</h2>
+        <p class="lead text-xs-center">
+            Sviluppiamo servizi e applicazioni web based e mobile, sistemi di gestione dati e esperienze utente interattive.<br/>
+            Rendiamo accessibili le ultime tecnologie senza costi di licenza.<br/>
+            Lavoriamo costantemente per promuovere l'uso e la crescita degli strumenti open source.<br/>
+            Ecco i nostri principali servizi:
+        </p>
+        <div class="card-group">
+            <!-- card -->
+            <div class="card">
+                <img class="card-img-top img-fluid" src="{% static 'img/123.jpeg' %}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Sviluppo applicazioni mobile</h4>
+                    <p class="card-text">Sviluppiamo applicazioni ibride e native per le piattaforme iOS e Android, utilizzando framework e tecnologie di ultima generazione.</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <img class="card-img-top img-fluid" src="{% static 'img/consulenza.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Consulenza su prodotti open source</h4>
+                    <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <img class="card-img-top img-fluid" src="{% static 'img/code.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Siti e applicativi web</h4>
+                    <p class="card-text">Lo sviluppo di siti e applicativi web, in tutte le sue declinazioni, è il nostro core business e sviluppiamo le nostre competenze intorno a questa attività.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="two" class="bg-alt">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-xs-center">
+                <h2 class="m-t-0 text-primary">We <i class="icon-sm ion-ios-heart-outline wow fadeIn text-primary"></i> Open Source</h2>
+                <hr class="primary">
+                <p class="lead">
+                  Da anni abbiamo scelto di credere e sostenere le tecnologie e la community Open Source che sono sempre in evoluzione.<br/>
+                  Abbiamo investito tempo e mezzi per padroneggiare al meglio le tecnologie in cui crediamo e siamo costantemente alla ricerca di strumenti che ci permettano di  igliorare il nostro lavoro.<br/>
+                  Sviluppiamo per :
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 text-xs-center">
+                <div class="feature">
+                    <i class="icon-lg ion-ios-cloud-outline wow fadeIn" data-wow-delay=".1s"></i>
+                    <h6 class="text-uppercase">server</h6>
+                    <p class="text-muted m-b-0">Flexbox provides <a href="http://v4-alpha.getbootstrap.com/getting-started/flexbox">simpler, more flexible layout</a> options like vertical centering.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-xs-center">
+                <div class="feature">
+                    <i class="icon-lg ion-ios-browsers-outline wow fadeInUp"></i>
+                    <h6 class="text-uppercase">browser</h6>
+                    <p class="text-muted m-b-0">Simply set the <code>$enable-flex</code> variable to <a target="ext" href="http://codeply.com/go/YFFFWHVoRB">enable flexbox</a> in Bootstrap 4.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-xs-center">
+                <div class="feature">
+                    <i class="icon-lg ion-iphone wow fadeIn" data-wow-delay=".1s"></i>
+                    <h6 class="text-uppercase">mobile</h6>
+                    <p class="text-muted m-b-0">Introduced in CSS3, flexbox won't work in older browsers like <a href="http://caniuse.com/#feat=flexbox">IE9</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="last">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2 text-xs-center">
+                <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
+                <hr class="primary">
+                <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+            <div class="col-lg-10 offset-lg-1 text-xs-center">
+                <form class="contact-form row">
+                    <div class="col-md-4">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-md-4">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Email">
+                    </div>
+                    <div class="col-md-4">
+                        <label></label>
+                        <input type="text" class="form-control" placeholder="Phone">
+                    </div>
+                    <div class="col-md-12">
+                        <label></label>
+                        <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                    </div>
+                    <div class="col-md-4 offset-md-4">
+                        <label></label>
+                        <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock page_content %}

@@ -1,0 +1,20 @@
+{% extends "bootstrap/starter.html" %}
+{% load cms_cookieconsent %}
+{% load sekizai_tags %}
+
+
+{% comment %}
+    Always use a starter like this for the base of your project.
+    At the top, you can extend a base template, or your own.
+    Use the block override_scripts for global scripts, the ones you want in 
+    all pages.
+{% endcomment %}
+
+
+{% block override_scripts %}
+{% addtoblock "page_scripts" %}
+
+    {% cookieconsent_script %}
+
+{% endaddtoblock %}
+{% endblock %}

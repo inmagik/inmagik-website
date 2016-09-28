@@ -1,0 +1,16 @@
+{% extends "starter.html"%}
+{% load cms_content %}
+
+{% block page_title %}Contact{% endblock %}
+
+{% block content %}
+
+{% include "navbar.html" %}
+
+<div class="container">
+    <h2>Contacts</h2>
+    {% cms_text_content "contacts_text" %}
+</div>
+
+
+{% endblock %}

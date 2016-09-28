@@ -1,0 +1,29 @@
+{% extends "starter.html"%}
+{% load cms_content cms_news %}
+
+{% block page_title %}News{% endblock %}
+
+{% block content %}
+
+{% include "navbar.html" %}
+
+<div class="container">
+    <h2>News</h2>
+    {% cms_text_content "news_text" %}
+    
+    
+    <h3>This list comes from the backend</h3>
+    {% cms_news_list as news %}
+    <ul class="list-group">
+    {% for n in news %}
+        <li class="list-group-item">{{n.text}}</li>
+    {% endfor %}
+    </ul>
+
+</div>
+
+
+
+
+
+{% endblock %}

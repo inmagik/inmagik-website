@@ -1,0 +1,22 @@
+{% load activelink %}
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{% url "home" %}">Your website</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="{% ifactive "home" %}active{% endifactive %}"><a href="{% url "home" %}">Home</a></li>
+          <li class="{% ifactive "news" %}active{% endifactive %}" ><a href="{% url "news" %}">News</a></li>
+          <li class="{% ifactive "contact" %}active{% endifactive %}"><a href="{% url "contact" %}">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>

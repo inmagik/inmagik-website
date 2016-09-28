@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% load technologies %}
+
+{% block page_content %}
+
+<section id="two" class="bg-alt">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-xs-center">
+          <h2 class="m-t-0 text-primary">Tecnologia</h2>
+          <hr class="primary">
+          <p class="lead">
+            Le nostre soluzioni software sono basate su componenti, linguaggi e frameworks Open Source, maturi e di successo, che selezioniamo e su cui lavoriamo costantemente.
+          </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <hr>
+
+    {% tech_list as technologies %}
+
+    <div class="container wow fadeInUp">
+          {% for tech in technologies %}
+          {% if forloop.counter0|divisibleby:"3" %}
+          <div class="card-group">
+          {% endif %}
+          <!-- card -->
+          <div class="card">
+              <img class="img-fluid img-tech m-x-auto" src="img/python-icon.png" alt="Card image cap">
+              <div class="card-block">
+                  <h4 class="card-title text-xs-center">{{tech.title}}</h4>
+                  <p class="card-text">{{tech.description}}</p>
+              </div>
+          </div>
+          {% if forloop.counter0|divisibleby:"3"  %}
+          </div>
+          {% endif %}
+          {% endfor %}
+
+
+
+      </div>
+  </section>
+
+
+  <section id="two" class="bg-alt">
+    <div class="container">
+       <div class="row">
+          <div class="col-xs-6 text-xs-center">
+            <img class="img-tech img-fluid m-x-auto" src="img/python-icon.png" alt="" />
+            <h4>Python</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="col-xs-6 text-xs-center">
+            <img class="img-tech img-fluid m-x-auto" src="img/js.png" alt="" />
+            <h4>Javascript</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          </div>
+       </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="container">
+       <div class="row">
+          <div class="col-xs-6 text-xs-center">
+            <img class="img-tech img-fluid m-x-auto" src="img/html5.png" alt="" />
+            <h4>HTML5</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          </div>
+          <div class="col-xs-6 text-xs-center">
+            <img class="img-tech img-fluid m-x-auto" src="img/django-logo.png" alt="" />
+            <h4>django</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+          </div>
+       </div>
+    </div>
+
+  </section>
+
+{% endblock page_content %}

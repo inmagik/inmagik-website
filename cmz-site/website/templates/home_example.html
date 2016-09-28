@@ -1,0 +1,32 @@
+{% extends "starter.html" %}
+{% load static from staticfiles %}
+{% load cms_content cmz_translations %}
+{% load sekizai_tags %}
+
+{% block page_title %}Home{% endblock %}
+
+{% block content %}
+
+{% include "navbar.html" %}
+
+<div class="container">
+  <div class="starter-template">
+    <h1>This is home</h1>
+    <p class="lead">
+        An example based on bootstrap.
+    </p>
+  </div>
+
+  <div>
+    {% cms_text_content "home_intro" %}
+  </div>
+
+</div><!-- /.container -->
+
+
+{% addtoblock "page_scripts" %}
+<script src="{% static "test.js" %}"></script>
+{% endaddtoblock %}
+
+
+{% endblock %}
