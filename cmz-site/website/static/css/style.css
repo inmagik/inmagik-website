@@ -5080,6 +5080,23 @@ img::-moz-selection {
 
 .author {
   padding: 0.5rem;
-  background-color: #e0e0e3; }
+  background-color: #bebebe; }
+
+.date {
+  font-size: 14px;
+  color: #bebebe;
+  font-style: italic; }
+
+.foot {
+  color: #fff;
+  background-color: deepskyblue; }
+  .foot a {
+    color: #fff;
+    font-weight: normal; }
+  .foot h6 {
+    color: #fff; }
+
+.foot-link {
+  font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */
