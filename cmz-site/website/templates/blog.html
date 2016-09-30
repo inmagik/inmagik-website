@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations %}
+
+{% block page_content %}
+
+<section id="two" class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-xs-center">
+        <h2 class="m-t-0 text-primary">INMAGIK Official Blog</h2>
+        <hr class="primary">
+      </div>
+    </div>
+  </div>
+  <hr>
+  <hr>
+
+  <div class="container wow fadeInUp">
+        <div class="card-group">
+            <!-- card -->
+            <div class="card">
+                <img class="img-fluid" src="{% static 'img/blog1.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Title</h4>
+                  <p class="card-text"><small class="text-muted">Written by Mandrake</small></p>
+                  <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <img class="img-fluid" src="{% static 'img/blog2.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                    <h4 class="card-title">Title</h4>
+                    <p class="card-text"><small class="text-muted">Written by Mandrake</small></p>
+                    <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
+                </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+                <img class="img-fluid" src="{% static 'img/blog3.jpg' %}" alt="Card image cap">
+                <div class="card-block">
+                  <h4 class="card-title">Title</h4>
+                  <p class="card-text"><small class="text-muted">Written by Mandrake</small></p>
+                  <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% endblock page_content %}

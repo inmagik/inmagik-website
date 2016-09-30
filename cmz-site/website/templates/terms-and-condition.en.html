@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations %}
+
+{% block page_content %}
+
+<section id="two" class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="m-t-0 text-primary">Terms & Conditions</h2>
+        <hr class="primary">
+        <h5>Definitions</h5>
+        <ul>
+          <li>The term 'INMAGIK' or 'us' or 'we' refers to the owner of the website whose registered office is Via Zambonate 22, Bergamo, Italy. <br/>Our company registration number (numero REA) is <strong>BG-420856</strong> Registro imprese di Bergamo.</li>
+          <li>The term 'you' refers to the user or viewer of our website.</li>
+        </ul>
+        <h5>Terms of use</h5>
+        <p>The use of this website is subject to the following terms of use.</p>
+        <ul>
+          <li>The content of this website is for your general information and use only. It is subject to change without any notice.</li>
+          <li>Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law.</li>
+          <li>Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.</li>
+          <li>IINMAGIK SRL takes no responsibility for, and will not be liable for, the website being unavailable due to technical issues beyond our control.</li>
+          <li>All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.</li>
+          <li>Unauthorised use of this website or any content reproduced in it may give rise to a claim for damages and/or be a criminal offence.</li>
+          <li>This website may include links to external websites and resources on the internet. These links are provided for your convenience and/or to provide further information. The inclusion of any links does not imply a recommendation or endorsement of the ideas expressed within them. We have no responsibility for the content of the linked website(s).</li>
+          <li>You may not create a link to this website from another website or document without INMAGIK prior written consent.</li>
+          <li>Your use of this website and any dispute arising out of such use is subject to the laws of Italy.</li>
+          <li>nmagik website may store cookies and/or localstorage information about the navigation experience on your device only for technical reasons (for the website to work properly) and for aggregated analytics (your ip is anonymized). <br/>This website does not use cookies for user profilation and for other commercial purposes.</li>
+        </ul>
+        <p>PBefore considering any partial or full reproduction or reuse of this website content, be sure to review our <a href="{% url 'terms-and-condition' %}">Copyright notice</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock page_content %}

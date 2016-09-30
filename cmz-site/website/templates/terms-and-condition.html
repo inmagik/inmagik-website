@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations %}
+
+{% block page_content %}
+
+<section id="two" class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="m-t-0 text-primary">Termini e condizioni</h2>
+        <hr class="primary">
+        <h5>Definizioni</h5>
+        <ul>
+          <li>Il termine 'INMAGIK' o 'noi' si riferisce al proprietario del sito la cui sede legale è Via Zambonate 22, Bergamo, Italia.<br/>Il numero di registrazione della nostra società presso il Registro imprese di Bergamo è <strong>BG-420856</strong> (numero REA).</li>
+          <li>Il termine 'voi' si riferisce agli utenti o ai visitatori del nostro sito.</li>
+        </ul>
+        <h5>Termini di utilizzo</h5>
+        <p>L'uso di questo sito web è soggetto ai seguenti termini di utilizzo.</p>
+        <ul>
+          <li>Il contenuto di questo sito ha lo scopo di fornire informazioni di carattere generale ed è soggetto a modifiche senza preavviso.</li>
+          <li>Né noi né terzi siamo tenuti a fornire alcuna garanzia circa l'esattezza, la tempestività, la performance, la completezza o l'idoneità delle informazioni e dei materiali trovati o offerti su questo sito per qualsiasi scopo particolare. L'utente riconosce che tali informazioni e materiali possono contenere imprecisioni o errori e si escludono espressamente la responsabilità per eventuali imprecisioni o errori nella misura massima consentita dalla legge.</li>
+          <li>L'utilizzo di qualsiasi informazione o materiale presi da questo sito è interamente a proprio rischio, e quindi non saremo responsabili di eventuali conseguenze. Sarà vostra responsabilità assicurarvi che tutti i prodotti, servizi o informazioni disponibili attraverso questo sito soddisfino le vostre specifiche esigenze.</li>
+          <li>INMAGIK SRL non si assume alcuna responsabilità nel caso in cui il sito web non sia disponibile a causa di problemi tecnici indipendenti dalla nostra volontà.</li>
+          <li>Tutti i marchi riprodotti in questo sito, che non sono di proprietà di, o concessi in licenza per l'operatore, sono riconosciuti su questo sito web.</li>
+          <li>L'uso non autorizzato di questo sito o qualsiasi contenuto riprodotto in esso può dar luogo a un risarcimento del danno e / o essere un reato penale.</li>
+          <li>Questo sito può contenere link a siti esterni e risorse su internet. Questi collegamenti sono forniti per comodità e / o di fornire ulteriori informazioni. L'inclusione di qualsiasi link non implica alcuna raccomandazione o approvazione delle idee espresse all'interno di essi. Non abbiamo alcuna responsabilità per il contenuto dei siti web collegati al nostro sito tramite link(s).</li>
+          <li>Non è consentito creare un link a questo sito da un altro sito web o da un documento senza un consenso scritto di INMAGIK.</li>
+          <li>L'utilizzo di questo sito web e tutte le controversie derivanti da tale utilizzo è soggetto alle leggi vigenti in Italia.</li>
+          <li>Il sito Inmagik può memorizzare cookie e / o informazioni "localStorage" circa l'esperienza di navigazione sul dispositivo solo per motivi tecnici (per consentire al sito web di funzionare correttamente) e per le analisi aggregate (il tuo IP è anonimo).<br/>Questo sito non fa uso di cookies per la profilazione degli utenti e per altri scopi commerciali.</li>
+        </ul>
+        <p>Prima di attuare qualsiasi riproduzione parziale o totale o riutilizzo del contenuto di questo sito web, assicurati di aver letto la nostra pagina <a href="{% url 'terms-and-condition' %}">Copyright notice</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock page_content %}
