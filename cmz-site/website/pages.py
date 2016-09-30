@@ -25,6 +25,16 @@ SITE_PAGES = {
     'terms-and-condition' : {
         'url' : 'terms-and-condition',
     },
+
+    'copyright-notice' : {
+        'url' : 'copy',
+    },
+
+    'cookie-policy' : {
+        'url' : 'cookie-policy',
+    },
+
+
     # 'items' : {
     #     'url' : 'items',
     #     'extra_modules' : []
