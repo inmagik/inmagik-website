@@ -26,10 +26,11 @@ SITE_MODULES = [
 COOKIECONSENT_OPTIONS = {
     "message" : "This is a custom message from CMZ!",
     "theme" : "dark-bottom",
-    "link" : "/example-cookie-policy/",
+    "link" : "cookie-policy",
     "dismiss" : "OK!",
     "learnMore" : "More Info"
 }
+
 
 try:
     from .secrets import *
