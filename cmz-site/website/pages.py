@@ -22,6 +22,9 @@ SITE_PAGES = {
         'url' : 'contact',
     },
 
+    'terms-and-condition' : {
+        'url' : 'terms-and-condition',
+    },
     # 'items' : {
     #     'url' : 'items',
     #     'extra_modules' : []

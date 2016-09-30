@@ -1,44 +1,38 @@
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6 col-sm-3">
-                <h6 class="text-uppercase">Bootstrap 4</h6>
-                <ul class="list-unstyled">
-                    <li><a href="https://medium.com/@bootply/bootstrap-4-whats-new-visual-guide-c84dd81d8387" target="ext">What's New</a></li>
-                    <li><a href="http://codeply.com/tagged/bootstrap-4" target="ext">Examples</a></li>
-                    <li><a href="http://getbootstrap.com" target="ext">Official</a></li>
-                    <li><a href="http://www.codeply.com/go/p/bootstrap_4.0.alpha" target="ext">Playground</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-6 col-sm-3 column">
-                <h6 class="text-uppercase">About</h6>
-                <ul class="list-unstyled">
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Delivery Information</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
-                </ul>
-            </div>
-            <div class="col-xs-12 col-sm-3 column">
-                <h6 class="text-uppercase">Stay Posted</h6>
-                <form>
-                    <div class="form-group">
-                        <input type="text" class="form-control" title="No spam, we promise!" placeholder="Tell us your email">
-                    </div>
-                    <div class="form-group">
-                        <button class="btn btn-primary" data-toggle="modal" data-target="#alertModal" type="button">Subscribe for updates</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-xs-12 col-sm-3 text-xs-right">
-                <h6 class="text-uppercase">Follow</h6>
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a rel="nofollow" href="" title="Twitter"><i class="icon-lg ion-social-twitter-outline"></i></a>&nbsp;</li>
-                    <li class="list-inline-item"><a rel="nofollow" href="" title="Facebook"><i class="icon-lg ion-social-facebook-outline"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <br>
-        <span class="pull-right text-muted small"><a href="http://bootstrap4.guide">Made by Themes.guide</a> ©2015-2016 Company</span>
+{% load static from staticfiles %}
+{% load cmz_translations %}
+
+<footer class="foot">
+  <div class="container">
+    <div class="row">
+      <h1 class="text-xs-center"><a href="#"><i class="ion-social-github-outline"></i></a> <a href="#"><i class="ion-social-twitter-outline"></i></a> <a href="#"><i class="ion-social-facebook-outline"></i></a></h1>
     </div>
+    <br/>
+    <div class="row">
+      <div class="col-sm-4">
+        <h6 class="text-uppercase">Inmagik Site</h6>
+        <ul class="list-unstyled foot-link">
+          <li><a href="{% url 'home' %}">Home</a></li>
+          <li><a href="{% url 'technology' %}">{% cmz_translation "tech" "footer" %}</a></li>
+          <li><a href="{% url 'projects' %}">{% cmz_translation "projects" "footer" %}</a></li>
+          <li><a href="{% url 'blog' %}">Blog</a></li>
+          <li><a href="{% url 'contact' %}">{% cmz_translation "contact" "footer" %}</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h6 class="text-uppercase">Terms</h6>
+        <ul class="list-unstyled foot-link">
+          <li><a href="{% url 'terms-and-condition' %}">{% cmz_translation "terms" "footer" %}</a></li>
+          <li><a href="">Copyright notice</a></li>
+          <li><a href="">Cookie policy</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4">
+        <h6 class="text-uppercase">Connect</h6>
+        <ul class="list-unstyled foot-link">
+          <li><a href="">Github</a></li>
+          <li><a href="">Twitter</a></li>
+          <li><a href="">Facebook</a></li>
+        </ul>
+      </div>
+  </div>
 </footer>

@@ -1,3 +1,5 @@
+
+//Navbar components
 @media (max-width: 768px){
  .navbar-toggleable-sm {
     ul {
@@ -31,6 +33,7 @@
   width:36px;
 }
 
+//Card's images components
 .img-tech {
   max-height: 100px;
   margin-top: 24px;
@@ -39,6 +42,8 @@
 .img-proj {
   max-height: 210px;
 }
+
+//Blog components
  .img-blog-detail {
    position: relative;
  }
@@ -69,6 +74,7 @@
   font-style: italic;
 }
 
+ //Footer components
 .foot {
   color: $white;
   background-color: $brand-primary;
@@ -83,4 +89,24 @@
 
 .foot-link {
   font-size: 14px;
+}
+
+//Fonts components
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+.sub {
+  font-family: $font-family-orbitron;
+  color: $brand-secondary;
+}
+
+.title {
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+//map
+#map {
+  height: 300px;
+  border: 1px solid $brand-secondary;
 }

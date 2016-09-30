@@ -4,40 +4,73 @@
 
 {% block page_content %}
 
-<section id="last">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2 text-xs-center">
-                <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
-                <hr class="primary">
-                <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
-            </div>
-            <div class="col-lg-10 offset-lg-1 text-xs-center">
-                <form class="contact-form row">
-                    <div class="col-md-4">
-                        <label></label>
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="col-md-4">
-                        <label></label>
-                        <input type="text" class="form-control" placeholder="Email">
-                    </div>
-                    <div class="col-md-4">
-                        <label></label>
-                        <input type="text" class="form-control" placeholder="Phone">
-                    </div>
-                    <div class="col-md-12">
-                        <label></label>
-                        <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
-                    </div>
-                    <div class="col-md-4 offset-md-4">
-                        <label></label>
-                        <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
-                    </div>
-                </form>
-            </div>
+<section class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-xs-center">
+        <h2 class="m-t-0 text-primary">Get in touch</h2>
+        <hr class="primary">
+        <div class="card">
+          <div class="card-img-top" id="map"></div>
+          <div class="card-block">
+            <h4 class="card-title">INMAGIK SRL</h4>
+            <p class="card-text">Indirizzo: via Zambonate 22 Bergamo (BG) - Italy</p>
+            <p class="card-text">TELEFONO 035 19901780</p>
+            <p class="card-text">MAIL <a href="mailto:info@inmagik.com?subject=feedback">info@inmagik.com</p>
+            <a href="#" class="btn btn-primary">Send a Message</a>
+          </div>
         </div>
+
+      </div>
     </div>
+  </div>
 </section>
+
+<script>
+  var map;
+  function initialize() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 16,
+      center: new google.maps.LatLng(45.698371, 9.669781),
+      mapTypeId: 'roadmap',
+      styles: [
+        {
+          featureType: 'road',
+          elementType: 'geometry',
+          stylers: [
+            { color: '#000000' },
+            { weight: 1 }
+          ]
+        }, {
+          featureType: 'road',
+          elementType: 'labels',
+          stylers: [
+            { saturation: -100 },
+            { invert_lightness: false }
+          ]
+        }, {
+          featureType: 'landscape',
+          elementType: 'geometry',
+          stylers: [
+            { hue: '#bebebe' },
+            { gamma: 1.4 },
+            { saturation: 82 },
+            { lightness: 96 }
+          ]
+        }, {
+          featureType: 'poi',
+          elementType: 'geometry',
+          stylers: [
+            { visibility: 'on' },
+            { color: '#00bfff'}
+          ]
+        },
+      ]
+    });
+  }
+</script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaPSPrkbZLnJt_5RX1U-vmzJRYOJF4ZJA&callback=initialize">
+</script>
 
 {% endblock page_content %}
