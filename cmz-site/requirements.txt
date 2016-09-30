@@ -1,1 +1,2 @@
 django-s3-storage==0.9.10
+Markdown==2.6.7

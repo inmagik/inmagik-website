@@ -27,7 +27,7 @@
           <!-- card -->
           <div class="card">
 
-              <img class="img-fluid img-tech m-x-auto" {% if tech.icon %}src="{{tech.icon.url}}"{% endif %} alt="Card image cap">
+              <img class="img-fluid img-tech m-x-auto" {% if tech.icon %}src="{{tech.icon.url}}"{% endif %} alt="{{tech.title}}">
               <div class="card-block">
                   <h4 class="card-title text-xs-center">{{tech.title}}</h4>
                   <p class="card-text">{{tech.description}}</p>
