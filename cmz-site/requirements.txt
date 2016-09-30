@@ -1,0 +1,2 @@
+django-googledrive-storage==1.2.0
+
