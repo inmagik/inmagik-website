@@ -8,12 +8,12 @@ def grouped(l, n):
         yield l[i:i+n]
 
 @register.simple_tag(takes_context=True)
-def tech_list(context, group_size=0, num_items=10):
+def tech_list(context, group_size=0):
     page = context['request'].GET.get('page', 1);
     page = int(page)
     #todo: add num pages, total items..
     #return Tech.objects.all()[(page-1)*num_items:num_items]
-    qset = Tech.objects.language().all()[(page-1)*num_items:num_items]
+    qset = Tech.objects.language().all()
     if not group_size:
         return qset
     else:
