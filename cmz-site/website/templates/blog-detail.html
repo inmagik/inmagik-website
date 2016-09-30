@@ -17,7 +17,7 @@
             <h2 class="primary text-xs-center">{{post.title}}</h2>
           </div>
         </div>
-        <span class="d-block text-xs-center author">{{post.author}}</span>
+        <span class="d-block text-xs-center author bg-primary">by {{post.author}}</span>
       </div>
     </div>
     <div class="container">
@@ -28,7 +28,7 @@
 
       <div class="col-lg-8">
         <hr class="primary">
-        <p class="date"><i class="ion-ios-calendar-outline"></i> {{post.date}}</p>
+        <p class="date text-xs-right"><i class="ion-ios-calendar-outline"></i> {{post.date}}</p>
         <div class="">
           {{post.html_body|safe}}
         </div>
