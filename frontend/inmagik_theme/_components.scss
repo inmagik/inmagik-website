@@ -81,6 +81,9 @@
   a {
     color: $white;
     font-weight: normal;
+    &:hover {
+      color: $brand-secondary;
+    }
   }
   h6 {
     color: $white;
@@ -91,6 +94,14 @@
   font-size: 14px;
 }
 
+.img-footer-logo{
+  height: 18px;
+  width: 18px;
+}
+
+.footer-info {
+  padding:7px;
+}
 //Fonts components
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
@@ -108,5 +119,4 @@ h1, h2, h3, h4, h5, h6 {
 //map
 #map {
   height: 300px;
-  border: 1px solid $brand-secondary;
 }

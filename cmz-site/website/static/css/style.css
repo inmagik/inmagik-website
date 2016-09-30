@@ -5089,11 +5089,20 @@ img::-moz-selection {
   .foot a {
     color: #fff;
     font-weight: normal; }
+    .foot a:hover {
+      color: #bebebe; }
   .foot h6 {
     color: #fff; }
 
 .foot-link {
   font-size: 14px; }
+
+.img-footer-logo {
+  height: 18px;
+  width: 18px; }
+
+.footer-info {
+  padding: 7px; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
@@ -5107,7 +5116,6 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 10px; }
 
 #map {
-  height: 300px;
-  border: 1px solid #bebebe; }
+  height: 300px; }
 
 /*# sourceMappingURL=style.css.map */
