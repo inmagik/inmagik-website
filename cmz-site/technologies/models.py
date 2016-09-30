@@ -7,6 +7,8 @@ from hvad.utils import get_translation_aware_manager
 
 # Create your models here.
 class Tech(TranslatableModel):
+
+    icon = models.ImageField(null=True, blank=True)
     translations = TranslatedFields(
         title = models.CharField(max_length=255),
         description = models.TextField(null=True, blank=True)

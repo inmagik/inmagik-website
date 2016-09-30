@@ -19,6 +19,7 @@ SITE_MODULES = [
     'cms_news',
     'cms_cookieconsent',
     'cmz_translations',
+    'cmz_blog',
     'technologies',
 ]
 
