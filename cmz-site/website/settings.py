@@ -1,7 +1,5 @@
-#IDEAS
-
-# Languages: tuples with code/name and options
-# FIRST ONE IS THE BASE ONE
+import os
+SETTINGS_FOLDER = os.path.dirname(__file__)
 
 LANGUAGES = [
     ('it', 'Italiano'),
