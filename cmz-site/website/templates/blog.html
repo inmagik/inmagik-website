@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
-{% load cmz_translations %}
+{% load cmz_translations cmz_blog %}
 
 {% block page_content %}
 
@@ -15,37 +15,34 @@
   </div>
   <hr>
   <hr>
+  {% blogpost_list 3 as posts %}
 
   <div class="container wow fadeInUp">
+      {% for group in posts %}
         <div class="card-group">
+          {% for post in group %}
             <!-- card -->
-            <div class="card">
-                <img class="img-fluid" src="{% static 'img/blog1.jpg' %}" alt="Card image cap">
+            <div class="card col-sm-4 p-x-0" style="">
+
+                <img class="img-fluid" {% if post.header_image %}src="{{post.header_image.url}}"{% endif %} alt="{{post.title}}">
                 <div class="card-block">
-                  <h4 class="card-title">Title</h4>
-                  <p class="card-text"><small class="text-muted">Written by Mandrake</small></p>
-                  <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
+                  <h4 class="card-title">
+                    <a href="{% url 'article' post.pk %}">{{post.title}}</a>
+                  </h4>
+                  <p class="card-text">
+                    <small class="pull-xs-left text-muted">by {{post.author}}</small>
+                    <small class="pull-xs-right text-muted"><i class="icon ion-calendar"></i> {{post.date}}</small>
+                    <small class="clearfix"></small>
+                  </p>
+                  <p class="card-text">
+                    {{post.html_intro|safe}}
+                  </p>
                 </div>
+
             </div>
-            <!-- card -->
-            <div class="card">
-                <img class="img-fluid" src="{% static 'img/blog2.jpg' %}" alt="Card image cap">
-                <div class="card-block">
-                    <h4 class="card-title">Title</h4>
-                    <p class="card-text"><small class="text-muted">Written by Mandrake</small></p>
-                    <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
-                </div>
-            </div>
-            <!-- card -->
-            <div class="card">
-                <img class="img-fluid" src="{% static 'img/blog3.jpg' %}" alt="Card image cap">
-                <div class="card-block">
-                  <h4 class="card-title">Title</h4>
-                  <p class="card-text"><small class="text-muted">Written by Mandrake</small></p>
-                  <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
-                </div>
-            </div>
+            {% endfor %}
         </div>
+      {% endfor %}
 
     </div>
 </section>

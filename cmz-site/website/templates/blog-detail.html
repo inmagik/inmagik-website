@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations cmz_blog %}
+
+{% block page_content %}
+
+
+{% blogpost view_kwargs.pk as post %}
+
+<section id="two" class="bg-alt">
+
+    <div class="container-fluid">
+      <div class="" id="box-search">
+        <div class="thumbnail" style="background-image:url({{post.header_image.url}})">
+          <!--<img class="w-100 img-blog-detail" src="img/blog1.jpg" alt="">-->
+          <div class="caption">
+            <h2 class="primary text-xs-center">{{post.title}}</h2>
+          </div>
+        </div>
+        <span class="d-block text-xs-center author">{{post.author}}</span>
+      </div>
+    </div>
+    <div class="container">
+      <!--
+          <img class="w-100 img-blog-detail" src="img/blog1.jpg" alt="" />
+        -->
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-8">
+        <hr class="primary">
+        <p class="date"><i class="ion-ios-calendar-outline"></i> {{post.date}}</p>
+        <div class="">
+          {{post.html_body|safe}}
+        </div>
+
+
+        </video>
+      </div>
+
+      <div class="col-lg-2"></div>
+    </div>
+    <hr>
+    <hr>
+
+  </section>
+
+{% endblock page_content %}

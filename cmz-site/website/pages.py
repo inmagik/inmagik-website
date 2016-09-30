@@ -18,6 +18,11 @@ SITE_PAGES = {
         'url' : 'blog',
     },
 
+    'article' : {
+         'url' : 'blog/(?P<pk>\w+)',
+         'template' : 'blog-detail.html'
+    },
+
     'contact' : {
         'url' : 'contact',
     },
