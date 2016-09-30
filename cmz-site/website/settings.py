@@ -19,6 +19,7 @@ SITE_MODULES = [
     'cmz_translations',
     'cmz_blog',
     'technologies',
+
 ]
 
 
@@ -31,10 +32,10 @@ COOKIECONSENT_OPTIONS = {
 }
 
 try:
-    from secrets import *
+    from .secrets import *
     AWS_S3_BUCKET_NAME = "inmagikweb"
     AWS_REGION = "eu-central-1"
     AWS_S3_GZIP = True
-    DEFAULT_FILE_STORAGE = "django_s3_storage.storage.S3Storage".
+    #DEFAULT_FILE_STORAGE = "django_s3_storage.storage.S3Storage".
 except:
     raise
