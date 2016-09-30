@@ -11,7 +11,7 @@ from django_s3_storage.storage import S3Storage
 class Tech(TranslatableModel):
 
     icon = models.ImageField(null=True, blank=True, upload_to="technology-icons",
-        storage=S3Storage
+        storage=S3Storage()
     )
     translations = TranslatedFields(
         title = models.CharField(max_length=255),
