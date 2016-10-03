@@ -27,11 +27,11 @@ SITE_MODULES = [
 
 
 COOKIECONSENT_OPTIONS = {
-    "message" : "This is a custom message from CMZ!",
+    "message" : "Questo sito web utilizza cookies per garantirti la miglior esperienza utente.",
     "theme" : "dark-bottom",
     "link" : "cookie-policy",
-    "dismiss" : "OK!",
-    "learnMore" : "More Info"
+    "dismiss" : "OK",
+    "learnMore" : "Maggiori informazioni"
 }
 
 
