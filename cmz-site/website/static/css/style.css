@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma";
+@import "https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma|";
 /*!
  * Bootstrap v4.0.0-alpha.4 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
@@ -5108,7 +5108,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .sub {
   font-family: "Michroma", sans-serif;
-  color: #bebebe; }
+  color: #bebebe;
+  font-size: 18px; }
 
 .title {
   font-weight: normal;
