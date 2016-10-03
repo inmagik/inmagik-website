@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations cmz_portfolio %}
+
+{% block page_content %}
+
+
+{% portfolio_item view_kwargs.pk as portfolio_item %}
+
+<section id="two" class="bg-alt">
+
+    <div class="container-fluid">
+      <div class="" id="box-search">
+        <div class="thumbnail" {% if portfolio_item.header_image %}style="background-image:url({{portfolio_item.header_image.url}})"{% endif %}>
+          <!--<img class="w-100 img-blog-detail" src="img/blog1.jpg" alt="">-->
+          <div class="caption">
+            <h2 class="primary text-xs-center">{{portfolio_item.title}}</h2>
+          </div>
+        </div>
+        <span class="d-block text-xs-center author bg-primary">by {{portfolio_item.author}}</span>
+      </div>
+    </div>
+    <div class="container">
+      <!--
+          <img class="w-100 img-blog-detail" src="img/blog1.jpg" alt="" />
+        -->
+      <div class="col-lg-2"></div>
+
+      <div class="col-lg-8">
+        <hr class="primary">
+        <p class="date text-xs-right"><i class="ion-ios-calendar-outline"></i> {{portfolio_item.created}}</p>
+        <p class="card-text">
+            {% for red_tag in portfolio_item.red_tags_list %}
+            <span class="tag tag-danger">{{red_tag}}</span>
+            {% endfor %}
+            {% for blue_tag in portfolio_item.blue_tags_list %}
+            <span class="tag tag-primary">{{blue_tag}}</span>
+            {% endfor %}
+        </p>
+        <div class="">
+          {{portfolio_item.html_body|safe}}
+        </div>
+
+
+        </video>
+      </div>
+
+      <div class="col-lg-2"></div>
+    </div>
+    <hr>
+    <hr>
+
+  </section>
+
+{% endblock page_content %}

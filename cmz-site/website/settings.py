@@ -18,6 +18,7 @@ SITE_MODULES = [
     'cms_cookieconsent',
     'cmz_translations',
     'cmz_blog',
+    'cmz_portfolio',
     'technologies',
 
 ]

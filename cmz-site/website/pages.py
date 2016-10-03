@@ -14,6 +14,11 @@ SITE_PAGES = {
         'url' : 'projects',
     },
 
+    'project' : {
+        'url' : 'projects/(?P<pk>\w+)',
+        'template' : 'portfolio-detail.html'
+    },
+
     'blog' : {
         'url' : 'blog',
     },

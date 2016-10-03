@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
-{% load cmz_translations %}
+{% load cmz_translations cmz_portfolio %}
 
 {% block page_content %}
 
@@ -20,44 +20,35 @@
   <hr>
 
   <div class="container wow fadeInUp">
+    {% portfolio_list 3 as portfolio_items %}
+    {% for group in portfolio_items %}
     <div class="card-group">
         <!-- card -->
-        <div class="card">
-            <img class="img-fluid img-proj m-x-auto" src="{% static 'img/accurat1.png' %}" alt="Card image cap">
-            <div class="card-img-overlay">
-              <h4 class="text-xs-right"><span class="tag tag-danger">Mobile</span></h4>
-            </div>
+        {% for portfolio_item in group %}
+        <div class="card col-md-4 p-x-0">
+            {% if portfolio_item.header_image %}
+            <img class="img-fluid img-proj m-x-auto"src="{{portfolio_item.header_image.url}}" alt="Card image cap">
+            {% endif %}
             <div class="card-block">
-              <h4 class="card-title">Sistema di valutazione per una scuola</h4>
-              <p class="card-text"><small><span class="tag tag-danger">Mobile</span> <span class="tag tag-primary">django</span> <span class="tag tag-primary">AngularJS</span></small></p>
-              <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
+              <h4 class="card-title">
+                <a href="{% url 'project' portfolio_item.pk %}">{{portfolio_item.title}}</a>
+              </h4>
+              <p class="card-text">
+                  {% for red_tag in portfolio_item.red_tags_list %}
+                  <span class="tag tag-danger">{{red_tag}}</span>
+                  {% endfor %}
+                  {% for blue_tag in portfolio_item.blue_tags_list %}
+                  <span class="tag tag-primary">{{blue_tag}}</span>
+                  {% endfor %}
+              </p>
+              <p class="card-text">
+                {{ portfolio_item.html_intro|safe}}
+              </p>
             </div>
         </div>
-        <!-- card -->
-        <div class="card">
-            <img class="img-fluid img-proj m-x-auto" src="{% static 'img/584.png' %}" alt="Card image cap">
-            <div class="card-img-overlay">
-              <h4 class="text-xs-right"><span class="tag tag-danger">Browser</span></h4>
-            </div>
-            <div class="card-block">
-                <h4 class="card-title">Grafici Interattivi</h4>
-                <p class="card-text"><small><span class="tag tag-primary">Javascript</span> <span class="tag tag-primary">AngularJS</span></small></p>
-                <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
-            </div>
-        </div>
-        <!-- card -->
-        <div class="card">
-            <img class="img-fluid img-proj m-x-auto" src="{% static 'img/amat1.png' %}" alt="Card image cap">
-            <div class="card-img-overlay">
-              <h4 class="text-xs-right"><span class="tag tag-danger">Browser</span><br/><span class="tag tag-danger">Mobile</span><br/><span class="tag tag-danger">Server</span></h4>
-            </div>
-            <div class="card-block">
-              <h4 class="card-title">Title <span class="tag tag-danger">Mobile</span></h4>
-              <p class="card-text"><small><span class="tag tag-primary">django</span> <span class="tag tag-primary">AngularJS</span></small></p>
-              <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="tech.html">tecnologia</a>.</p>
-            </div>
-        </div>
+        {% endfor %}
     </div>
+    {% endfor %}
 
     </div>
 </section>
