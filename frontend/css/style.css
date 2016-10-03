@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma";
+@import "https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma|";
 /*!
  * Bootstrap v4.0.0-alpha.4 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
@@ -5075,8 +5075,7 @@ img::-moz-selection {
   text-shadow: 2px 2px 4px #000000; }
 
 .author {
-  padding: 0.5rem;
-  background-color: #bebebe; }
+  padding: 0.5rem; }
 
 .date {
   font-size: 14px;
@@ -5101,12 +5100,16 @@ img::-moz-selection {
   height: 18px;
   width: 18px; }
 
+.footer-info {
+  padding: 20px; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
 .sub {
   font-family: "Michroma", sans-serif;
-  color: #bebebe; }
+  color: #bebebe;
+  font-size: 18px; }
 
 .title {
   font-weight: normal;
