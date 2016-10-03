@@ -18,18 +18,22 @@
        <div class="container wow fadeInUp">
         <h2 class="text-xs-center">{% cmz_translation "about-us-title" "home" "About" %}</h2>
         <p class="lead text-xs-center">
-            Sviluppiamo servizi e applicazioni web based e mobile, sistemi di gestione dati e esperienze utente interattive.<br/>
-            Rendiamo accessibili le ultime tecnologie senza costi di licenza.<br/>
-            Lavoriamo costantemente per promuovere l'uso e la crescita degli strumenti open source.<br/>
-            Ecco i nostri principali servizi:
-        </p>
+            Sviluppiamo servizi e applicazioni web based e su piattaforme mobile, sistemi di gestione dati e
+            esperienze utente interattive.
         <div class="card-group">
             <!-- card -->
             <div class="card">
                 <img class="card-img-top img-fluid" src="{% static 'img/123.jpeg' %}" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">Sviluppo applicazioni mobile</h4>
-                    <p class="card-text">Sviluppiamo applicazioni ibride e native per le piattaforme iOS e Android, utilizzando framework e tecnologie di ultima generazione.</p>
+                    <p class="card-text">
+                      Sviluppiamo applicazioni native e ibride per le piattaforme iOS e Android,
+                      utilizzando framework e tecnologie di ultima generazione.
+                    </p>
+                    <p class="card-text">
+                      Maggiori dettagli nella sezione
+                      <a href="{% url 'technology' %}">sviluppo apps</a>.
+                    </p>
                 </div>
             </div>
             <!-- card -->
@@ -37,7 +41,14 @@
                 <img class="card-img-top img-fluid" src="{% static 'img/consulenza.jpg' %}" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">Consulenza su prodotti open source</h4>
-                    <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="{% url 'technology' %}">tecnologia</a>.</p>
+                    <p class="card-text">
+                      Offriamo servizi di consulenza sugli strumenti e i frameworks che
+                      utilizziamo nei nostri processi di sviluppo.
+                    </p>
+                    <p class="card-text">
+                      Puoi trovare la lista degli strumenti che utilizziamo nella nostra
+                      pagina <a href="{% url 'technology' %}">tecnologia</a>.
+                    </p>
                 </div>
             </div>
             <!-- card -->
@@ -45,7 +56,13 @@
                 <img class="card-img-top img-fluid" src="{% static 'img/code.jpg' %}" alt="Card image cap">
                 <div class="card-block">
                     <h4 class="card-title">Siti e applicativi web</h4>
-                    <p class="card-text">Lo sviluppo di siti e applicativi web, in tutte le sue declinazioni, è il nostro core business e sviluppiamo le nostre competenze intorno a questa attività.</p>
+                    <p class="card-text">
+                      Lo sviluppo di siti e applicativi web, in tutte le sue declinazioni,
+                      è il nostro core business e sviluppiamo le nostre competenze intorno a questa attività.
+                    </p>
+                    <p class="card-text">
+                      Tutti i dettagli nella sezione <a href="{% url 'technology' %}">sviluppo web</a>.
+                    </p>
                 </div>
             </div>
         </div>
@@ -58,34 +75,59 @@
                 <h2 class="m-t-0 text-primary">We <i class="icon-sm ion-ios-heart-outline wow fadeIn text-primary"></i> Open Source</h2>
                 <hr class="primary">
                 <p class="lead">
-                  Da anni abbiamo scelto di credere e sostenere le tecnologie e la community Open Source che sono sempre in evoluzione.<br/>
-                  Abbiamo investito tempo e mezzi per padroneggiare al meglio le tecnologie in cui crediamo e siamo costantemente alla ricerca di strumenti che ci permettano di  igliorare il nostro lavoro.<br/>
-                  Sviluppiamo per :
+                  Lavoriamo utilizzando e promuovendo la crescita di strumenti e frameworks
+                  opensource, rendendo disponibili ai nostri clienti le ultime tecnologie software disponibili a
+                  livello mondiale.
+                </p>
+                <p class="lead">
+                  Per i nostri clienti questo significa <i>nessun costo di licenza imposto</i> per l'utilizzo
+                  dei nostri prodotti e <i>nessun limite</i> alla realizzazione di funzionalità avanzate all'interno
+                  del nostro software.
                 </p>
             </div>
         </div>
     </div>
+</section>
+<section id="three" class="">
     <div class="container wow fadeInUp">
+        <div class="row">
+            <div class="col-lg-12 text-xs-center">
+                <h2 class="m-t-0 text-primary">Sviluppo multipiattaforma</h2>
+                <hr class="primary">
+                <p class="lead">
+
+                </p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-4 col-md-4 text-xs-center">
                 <div class="feature">
                     <i class="icon-lg ion-ios-cloud-outline wow fadeIn" data-wow-delay=".1s"></i>
                     <h6 class="text-uppercase">server</h6>
-                    <p class="text-muted m-b-0">Flexbox provides <a href="http://v4-alpha.getbootstrap.com/getting-started/flexbox">simpler, more flexible layout</a> options like vertical centering.</p>
+                    <p class="text-muted m-b-0">
+                      Realizziamo backend e applicativi gestionali basati su database
+                      SQL o NOSql, API rest, script di migrazione, sincronizzazione e trasformazione dati.
+                    </p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 text-xs-center">
                 <div class="feature">
                     <i class="icon-lg ion-ios-browsers-outline wow fadeInUp"></i>
                     <h6 class="text-uppercase">browser</h6>
-                    <p class="text-muted m-b-0">Simply set the <code>$enable-flex</code> variable to <a target="ext" href="http://codeply.com/go/YFFFWHVoRB">enable flexbox</a> in Bootstrap 4.</p>
+                    <p class="text-muted m-b-0">
+                      Sviluppiamo siti web e applicativi responsive e applicativi gestionali web-based
+                      con funzionalità avanzate di integrazione social, visualizzazione dati e infografiche,
+                      gestione di dati geografici.
+                    </p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-4 text-xs-center">
                 <div class="feature">
                     <i class="icon-lg ion-iphone wow fadeIn" data-wow-delay=".1s"></i>
                     <h6 class="text-uppercase">mobile</h6>
-                    <p class="text-muted m-b-0">Introduced in CSS3, flexbox won't work in older browsers like <a href="http://caniuse.com/#feat=flexbox">IE9</a>.</p>
+                    <p class="text-muted m-b-0">
+                      Realizziamo applicazioni per smartphone e tablet, su piattaforme iOS, Android e Windows Mobile.
+                    </p>
                 </div>
             </div>
         </div>
