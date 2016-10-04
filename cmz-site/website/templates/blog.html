@@ -28,14 +28,14 @@
 
               </div>
                 <div class="card-block">
-                  <h4 class="card-title">
-                    <a href="{% url 'article' post.pk %}">{{post.title}}</a>
-                  </h4>
                   <p class="card-text">
                     <small class="pull-xs-left text-muted">by {{post.author}}</small>
                     <small class="pull-xs-right text-muted"><i class="icon ion-calendar"></i> {{post.date}}</small>
                     <small class="clearfix"></small>
                   </p>
+                  <h4 class="card-title">
+                    <a href="{% url 'article' post.pk %}">{{post.title}}</a>
+                  </h4>
                   <p class="card-text">
                     {{post.html_intro|safe}}
                   </p>
@@ -43,6 +43,14 @@
 
             </div>
             {% endfor %}
+            {% if group|length < 3 %}
+            <div class="card" style="border:none">
+            </div>
+            {% endif %}
+            {% if group|length < 2 %}
+            <div class="card" style="border:none">
+            </div>
+            {% endif %}
         </div>
       {% empty %}
       <div class="text-xs-center" role="alert">

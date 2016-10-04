@@ -51,6 +51,7 @@
 //Card's images components
 .img-tech {
   max-height: 100px;
+  height: 100px;
   margin-top: 24px;
 }
 
@@ -82,6 +83,7 @@
     position: relative;
     height: 400px;
     background-size: cover;
+    background-color: #222;
 }
 
 .caption {

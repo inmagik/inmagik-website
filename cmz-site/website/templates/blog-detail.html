@@ -11,7 +11,7 @@
 
     <div class="container-fluid">
       <div class="" id="box-search">
-        <div class="thumbnail" style="background-image:url({{post.header_image.url}})">
+        <div class="thumbnail" style="{% if post.header_image %}background-image:url({{post.header_image.url}}){% endif %}">
           <!--<img class="w-100 img-blog-detail" src="img/blog1.jpg" alt="">-->
           <div class="caption">
             <h2 class="primary text-xs-center">{{post.title}}</h2>

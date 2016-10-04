@@ -17,6 +17,8 @@ class PortfolioItem(TranslatableModel):
     blue_tags = models.CharField(max_length=200, null=True, blank=True)
     red_tags = models.CharField(max_length=200, null=True, blank=True)
 
+    published = models.BooleanField(default=False)
+
     translations = TranslatedFields(
         title = models.CharField(max_length=255),
         intro = models.TextField(max_length=1000, null=True, blank=True),

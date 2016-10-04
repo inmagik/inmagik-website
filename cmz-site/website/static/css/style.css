@@ -5063,6 +5063,7 @@ img::-moz-selection {
 
 .img-tech {
   max-height: 100px;
+  height: 100px;
   margin-top: 24px; }
 
 .img-proj {
@@ -5086,7 +5087,8 @@ img::-moz-selection {
 .thumbnail {
   position: relative;
   height: 400px;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #222; }
 
 .caption {
   position: absolute;

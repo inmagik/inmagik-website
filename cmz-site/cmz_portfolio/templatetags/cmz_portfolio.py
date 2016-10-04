@@ -10,10 +10,10 @@ def grouped(l, n):
         yield l[i:i+n]
 
 @register.simple_tag(takes_context=True)
-def portfolio_list(context, group_size=0, num_items=None):
+def portfolio_list(context, group_size=0, published=True, num_items=None):
     page = context['request'].GET.get('page', 1);
     page = int(page)
-    qset = PortfolioItem.objects.language().all()
+    qset = PortfolioItem.objects.language().filter(published=published)
     if num_items:
         qset = qset[(page-1)*num_items:num_items]
 

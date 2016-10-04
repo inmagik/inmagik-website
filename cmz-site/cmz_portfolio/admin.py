@@ -2,6 +2,11 @@ from django.contrib import admin
 from hvad.admin import TranslatableAdmin
 from .models import PortfolioItem
 
-admin.site.register(PortfolioItem, TranslatableAdmin)
+class PortfolioItemAdmin(TranslatableAdmin):
 
-# Register your models here.
+  list_display = ['pk', 'get_title', 'order', 'published']
+
+  def get_title(self, obj):
+        return obj.title
+
+admin.site.register(PortfolioItem, PortfolioItemAdmin)

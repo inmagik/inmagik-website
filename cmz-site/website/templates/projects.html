@@ -17,7 +17,7 @@
     </div>
   </div>
   <hr>
-  
+
   <div class="container wow fadeInUp">
     {% portfolio_list 3 as portfolio_items %}
     {% for group in portfolio_items %}
@@ -27,12 +27,14 @@
         <div class="card p-x-0">
             <div class="bg-primary"
             style="height:150px; background-position:center center; background-size:cover;  {% if portfolio_item.header_image %} background-image:url({{portfolio_item.header_image.url}}); {% endif %}">
-
             </div>
             <div class="card-block">
               <h4 class="card-title">
                 <a href="{% url 'project' portfolio_item.pk %}">{{portfolio_item.title}}</a>
               </h4>
+              <p class="card-text">
+                {{ portfolio_item.html_intro|safe}}
+              </p>
               <p class="card-text">
                   {% for red_tag in portfolio_item.red_tags_list %}
                   <span class="tag tag-danger">{{red_tag}}</span>
@@ -41,12 +43,17 @@
                   <span class="tag tag-primary">{{blue_tag}}</span>
                   {% endfor %}
               </p>
-              <p class="card-text">
-                {{ portfolio_item.html_intro|safe}}
-              </p>
             </div>
         </div>
         {% endfor %}
+        {% if group|length < 3 %}
+        <div class="card" style="border:none">
+        </div>
+        {% endif %}
+        {% if group|length < 2 %}
+        <div class="card" style="border:none">
+        </div>
+        {% endif %}
     </div>
     {% endfor %}
 
