@@ -18,5 +18,11 @@ class Tech(TranslatableModel):
         description = models.TextField(null=True, blank=True)
     )
 
+    order = models.IntegerField(blank=True, default=0)
+
+    class Meta:
+        ordering = ['order']
+        
+
     def __unicode__(self):
         return self.title

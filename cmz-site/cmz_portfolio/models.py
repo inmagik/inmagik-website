@@ -23,6 +23,12 @@ class PortfolioItem(TranslatableModel):
         body = models.TextField(null=True, blank=True)
     )
 
+    order = models.IntegerField(blank=True, default=0)
+
+    class Meta:
+        ordering = ['order']
+
+
     def html_body(self):
         return markdown.markdown(self.body)
 
