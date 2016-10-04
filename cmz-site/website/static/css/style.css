@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma|";
+@import "https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma|Open+Sans|";
 /*!
  * Bootstrap v4.0.0-alpha.4 (http://getbootstrap.com)
  * Copyright 2011-2016 The Bootstrap Authors
@@ -429,7 +429,7 @@ output {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Comfortaa", cursive;
+  font-family: "Open Sans", cursive;
   font-weight: 500;
   line-height: 1.1;
   color: inherit; }
@@ -5118,7 +5118,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .title {
   font-weight: normal;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  font-family: "Comfortaa", sans-serif; }
 
 #map {
   height: 300px; }

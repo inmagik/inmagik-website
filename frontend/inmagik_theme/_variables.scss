@@ -5,7 +5,7 @@ $brand-danger: #ff4000;
 $border-thin: 1px solid $brand-primary;
 
 $a-color: $brand-primary;
-@import 'https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma|';
+@import 'https://fonts.googleapis.com/css?family=Orbitron|Raleway|Comfortaa|Michroma|Open+Sans|';
 $font-family-sans-serif: 'Raleway', sans-serif;
 //$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
 $font-family-serif:      Georgia, "Times New Roman", Times, serif !default;
@@ -14,4 +14,5 @@ $font-family-base:       $font-family-sans-serif !default;
 
 //$font-family-orbitron: 'Orbitron', sans-serif;
 $font-family-orbitron: 'Michroma', sans-serif;
-$headings-font-family: 'Comfortaa', cursive;
+$headings-font-family: 'Open Sans', cursive;
+$title-font-family: 'Comfortaa', sans-serif;
