@@ -32,8 +32,11 @@
                       utilizzando framework e tecnologie di ultima generazione.
                     </p>
                     <p class="card-text">
-                      Maggiori dettagli nella sezione
-                      <a href="{% url 'technology' %}">sviluppo apps</a>.
+                      Tutti i dettagli nella sezione
+                      <a href="{% url 'apps' %}">sviluppo apps</a>.
+                    </p>
+                    <p class="card-text text-xs-center">
+                      <a class="btn btn-primary" href="{% url 'apps' %}">Dettagli</a>.
                     </p>
                 </div>
             </div>
@@ -50,6 +53,7 @@
                       Puoi trovare la lista degli strumenti che utilizziamo nella nostra
                       pagina <a href="{% url 'technology' %}">tecnologia</a>.
                     </p>
+
                 </div>
             </div>
             <!-- card -->
@@ -64,9 +68,41 @@
                     <p class="card-text">
                       Tutti i dettagli nella sezione <a href="{% url 'technology' %}">sviluppo web</a>.
                     </p>
+                    <p class="card-text text-xs-center">
+                      <a class="btn btn-primary" href="{% url 'apps' %}">Dettagli</a>.
+                    </p>
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2 text-xs-center">
+                <div class="card text-xs-center">
+
+                  <div class="card-block">
+                    <h2 class="card-title">Check-up gratuito</h2>
+                    <p class="lead card-text">
+                      Hai già un sito o una app che vorresti migliorare, aggiornare
+                      o arricchire con funzionalità aggiuntive?
+                    </p>
+                    <p class="lead card-text">
+                      <a href="{% url 'contact' %}">Contattaci</a> per un check-up gratuito
+                      e un'analisi di fattibilità delle tue nuove esigenze.
+                    </p>
+                    <hr>
+                    <div class="cart-text">
+                    <p>
+                        <a href="#" class="btn btn-primary">Contattaci</a>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
     </div>
 </section>
 <section id="two" class="bg-alt">

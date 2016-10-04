@@ -10,6 +10,14 @@ SITE_PAGES = {
         'url' : 'tech',
     },
 
+    'apps' : {
+        'url' : 'apps',
+    },
+
+    'web' : {
+        'url' : 'web',
+    },
+
     'projects' : {
         'url' : 'projects',
     },

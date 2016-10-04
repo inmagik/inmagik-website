@@ -1,0 +1,155 @@
+{% extends "base.html" %} {% load static from staticfiles %} {% load cmz_translations %} {% block page_content %}
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-xs-center">
+        <h2 class="m-t-0 text-primary">Sviluppo web</h2>
+        <p class="lead">
+          INMAGIK sviluppa app siti e applicazioni web di diverse tipologie, utilizzando tecnologie moderne
+          e realizzando interfacce ed esperienze utente personalizzabili al massimo livello.
+        </p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Siti web statici</h4>
+            <h6 class="card-subtitle text-muted">Powered by HTML5</h6>
+          </div>
+          <img src="{% static 'img/react-native.png' %}" class="img-fluid" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              Realizziamo siti web in linguaggio HTML5, con la massima attenzione all'usabilità su tutti i dispositivi
+              e alla massima fruibilità dei tuoi contenuti.
+            </p>
+            <p>
+              I nostri siti sono adattabili a diverse esigenze e budget, anche per quanto riguarda la progettazione
+              grafica che può essere gestita da noi in collaborazione con agenzie specializzati e freelance, all'utilizzo
+              e personalizzazione di template acquistabili a prezzi contenuti, o a specifiche fornite direttamente
+              dal cliente finale
+            </p>
+
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">CMS</h4>
+            <h6 class="card-subtitle text-muted">Powered by Django</h6>
+          </div>
+          <img src="{% static 'img/ionic-apps.jpg' %}" class="img-fluid" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              INMAGIK offre soluzioni CMS personalizzate che consentono una gestione autonoma dei contenuti
+              e delle impostazioni del proprio sito, con una interfaccia di amministrazione semplice ed intuitiva,
+              ed un sito frontend personalizzabile nei minimi dettagli.
+            </p>
+            <p>
+              Le nostre soluzioni CMS si offrono la possibilità di gestione di contenuti di vario tipo,
+              dai testi alle immagini alle informazioni di tipo geografico e consente una netta separazione tra
+              la configurazione del funzionamento del sito e la gestione del contenuto.
+            </p>
+            <p>
+              Il nostro approccio supera le problematiche tipiche dell'utilizzo di sistemi
+              come Wordpress, Drupal o Joomla, legate alla complessità delle interfacce di amministrazione,
+              ai costi di manutenzione nel tempo e alla sicurezza.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Gestionali e applicativi web</h4>
+            <h6 class="card-subtitle text-muted">Powered by Django, HTML5 and ES2015</h6>
+          </div>
+          <img src="{% static 'img/ionic-apps.jpg' %}" class="img-fluid" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Soluzioni personalizzate</h4>
+            <h6 class="card-subtitle text-muted">Powered by our <a href="{% url 'technology' %}">tech and skills</a></h6>
+          </div>
+          <img src="{% static 'img/ionic-apps.jpg' %}" class="img-fluid" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              Realizziamo soluzioni personalizzate utilizzando un ampia gamma di tecnologie a copertura di tutte
+              le funzionalità di applicativi e sistemi di backend web based.
+            </p>
+            <p>
+              Le nostre soluzioni includono: sistemi completi frontend-backend, API rest, interfacciamento con
+              basi dati di tipo SQL e noSQL, soluzioni web su piattaforme embedded, gestione di dati geografici,
+              integrazione di sistemi.
+            </p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="card text-xs-center">
+
+          <div class="card-block">
+            <h3 class="card-title">Per le agenzie e gli studi grafici</h3>
+            <p class="cart-text">
+              Collaboriamo con agenzie web, studi di grafica e di comunicazione per
+              l'implementazione di siti e applicativi dinamici.
+            </div>
+            <p class="cart-text">
+              Contattaci per un preventivo gratuito e uno studio di fattibilità
+              dei tuoi progetti con le nostre tecnologie e per esplorare le funzionalità
+              aggiuntive che potresti offrire ai tuoi clienti finali. Potrai accedere
+              a compentenze avanzate a costi molto vantaggiosi.
+            </p>
+            <hr>
+            <div class="cart-text">
+            <p>
+                <a href="#" class="btn btn-primary">Contattaci</a>
+            </p>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBaPSPrkbZLnJt_5RX1U-vmzJRYOJF4ZJA&center=-33.9,151.14999999999998&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360">
+</script>
+
+{% endblock page_content %}
