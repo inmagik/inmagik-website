@@ -1,18 +1,24 @@
 
 //Navbar components
 @media (max-width: 768px){
+  .navbar-default .nav > li > a, .navbar-default .nav > li > a:focus {
+    font-size:18px;
+  }
+
  .navbar-toggleable-sm {
-    ul {
+   text-align: center;
+     ul {
       padding-top: 60px;
+      padding-bottom:40px;
     }
   }
 }
 
-
+//this class is applied to body when document is scrolled for more than 50px.  (needs javascript)
+//we use it for adding a nice box-shadow to the bottom border of our navbar.
 .scrolled {
   .navbar-shadowed{
     box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.25);
-
   }
 }
 
@@ -39,6 +45,7 @@
 .img-navbar-logo{
   height:36px;
   width:36px;
+  display: inline-block;
 }
 
 //Card's images components
