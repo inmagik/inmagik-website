@@ -10,10 +10,10 @@ def grouped(l, n):
         yield l[i:i+n]
 
 @register.simple_tag(takes_context=True)
-def blogpost_list(context, group_size=0, num_items=10):
+def blogpost_list(context, group_size=0, published=True, num_items=10):
     page = context['request'].GET.get('page', 1);
     page = int(page)
-    qset = BlogPost.objects.language().all()[(page-1)*num_items:num_items]
+    qset = BlogPost.objects.language().filter(published=published)[(page-1)*num_items:num_items]
     if not group_size:
         return qset
     else:
