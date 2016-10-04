@@ -22,9 +22,11 @@
         <div class="card-group">
           {% for post in group %}
             <!-- card -->
-            <div class="card col-sm-4 p-x-0" style="">
+            <div class="card p-x-0" style="">
+              <div class="bg-primary"
+              style="height:240px; background-position:center center; background-size:cover;  {% if post.header_image %} background-image:url({{post.header_image.url}}); {% endif %}">
 
-                <img class="img-fluid" {% if post.header_image %}src="{{post.header_image.url}}"{% endif %} alt="{{post.title}}">
+              </div>
                 <div class="card-block">
                   <h4 class="card-title">
                     <a href="{% url 'article' post.pk %}">{{post.title}}</a>

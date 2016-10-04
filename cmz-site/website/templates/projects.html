@@ -17,18 +17,18 @@
     </div>
   </div>
   <hr>
-  <hr>
-
+  
   <div class="container wow fadeInUp">
     {% portfolio_list 3 as portfolio_items %}
     {% for group in portfolio_items %}
     <div class="card-group">
         <!-- card -->
         {% for portfolio_item in group %}
-        <div class="card col-md-4 p-x-0">
-            {% if portfolio_item.header_image %}
-            <img class="img-fluid img-proj m-x-auto"src="{{portfolio_item.header_image.url}}" alt="Card image cap">
-            {% endif %}
+        <div class="card p-x-0">
+            <div class="bg-primary"
+            style="height:150px; background-position:center center; background-size:cover;  {% if portfolio_item.header_image %} background-image:url({{portfolio_item.header_image.url}}); {% endif %}">
+
+            </div>
             <div class="card-block">
               <h4 class="card-title">
                 <a href="{% url 'project' portfolio_item.pk %}">{{portfolio_item.title}}</a>

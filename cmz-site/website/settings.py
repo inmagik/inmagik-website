@@ -21,15 +21,17 @@ SITE_MODULES = [
     'cmz_portfolio',
     'technologies',
 
+    'cmz_jwt_auth',
+
 ]
 
 
 COOKIECONSENT_OPTIONS = {
-    "message" : "This is a custom message from CMZ!",
+    "message" : "Questo sito web utilizza cookies per garantirti la miglior esperienza utente.",
     "theme" : "dark-bottom",
     "link" : "cookie-policy",
-    "dismiss" : "OK!",
-    "learnMore" : "More Info"
+    "dismiss" : "OK",
+    "learnMore" : "Maggiori informazioni"
 }
 
 
@@ -41,3 +43,23 @@ try:
     #DEFAULT_FILE_STORAGE = "django_s3_storage.storage.S3Storage".
 except:
     raise
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.BasicAuthentication',
+    ),
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    'PAGE_SIZE': 100,
+    'DEFAULT_FILTER_BACKENDS': (
+        'rest_framework.filters.DjangoFilterBackend',
+        'rest_framework.filters.OrderingFilter',
+        'rest_framework.filters.SearchFilter'
+    )
+}
+
+JWT_AUTH = {
+    'JWT_ALLOW_REFRESH': True,
+}
