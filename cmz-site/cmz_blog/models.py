@@ -13,6 +13,7 @@ class BlogPost(TranslatableModel):
         storage=S3Storage())
     author = models.CharField(max_length=200, null=True, blank=True)
     date = models.DateField(blank=True, null=True)
+    published = models.BooleanField(default=False)
 
     translations = TranslatedFields(
         title = models.CharField(max_length=255),
@@ -28,3 +29,6 @@ class BlogPost(TranslatableModel):
 
     def __unicode__(self):
         return self.title
+
+    class Meta:
+        ordering = ['-date']

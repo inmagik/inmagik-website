@@ -13,8 +13,8 @@
       </div>
     </div>
   </div>
-  <hr>
-  <hr>
+
+
   {% blogpost_list 3 as posts %}
 
   <div class="container wow fadeInUp">
@@ -44,6 +44,10 @@
             </div>
             {% endfor %}
         </div>
+      {% empty %}
+      <div class="text-xs-center" role="alert">
+        {% cmz_translation "no-posts" "blog" "Nessun post per ora, torna più tardi!." %}
+      </div>
       {% endfor %}
 
     </div>
