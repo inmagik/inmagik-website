@@ -29,3 +29,6 @@ class BlogPost(TranslatableModel):
 
     def __unicode__(self):
         return self.title
+
+    class Meta:
+        ordering = ['-date']
