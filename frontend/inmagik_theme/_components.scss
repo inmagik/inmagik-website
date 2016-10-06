@@ -23,8 +23,17 @@
   background-color: $white;
   padding-top:50px;
   overflow-y: scroll;
+  .dropdown-menu {
+        position: inherit;
+        float: none;
+        text-align: center;
+  }
 }
 
+.dropdown-menu {
+  min-width: auto;
+
+}
 //fix bootstap
 @media (width: 768px){
   .mobile-menu.collapse {

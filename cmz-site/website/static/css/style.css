@@ -5047,6 +5047,13 @@ img::-moz-selection {
   background-color: #fff;
   padding-top: 50px;
   overflow-y: scroll; }
+  .mobile-menu .dropdown-menu {
+    position: inherit;
+    float: none;
+    text-align: center; }
+
+.dropdown-menu {
+  min-width: auto; }
 
 @media (width: 768px) {
   .mobile-menu.collapse {
