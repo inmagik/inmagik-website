@@ -4816,6 +4816,9 @@ p {
 .bg-primary {
   background-color: #007FFF; }
 
+.bg-faded {
+  background-color: #f5f7f7; }
+
 .bg-alt {
   background-color: #fff; }
 
@@ -4929,12 +4932,15 @@ header {
   text-align: center;
   color: #001A33;
   width: 100%;
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 100%;
+  height: 100%; }
 
 header .header-content {
   position: relative;
   width: 100%;
-  padding: 100px 15px;
+  padding: 10px 15px;
+  top: 33%;
   text-align: center;
   z-index: 2; }
 
@@ -4951,9 +4957,6 @@ header .header-content .inner p {
 @media (min-width: 34em) {
   .icon-lg {
     font-size: 80px; }
-
-  header {
-    min-height: 100%; }
 
   header .header-content {
     position: absolute;
