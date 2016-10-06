@@ -14,6 +14,7 @@ LANGUAGE_CODE = 'it'
 
 SITE_MODULES = [
     'cms_content',
+    'cmz_files',
     'cms_news',
     'cms_cookieconsent',
     'cmz_translations',

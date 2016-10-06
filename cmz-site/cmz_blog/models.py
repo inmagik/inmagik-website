@@ -6,6 +6,8 @@ from hvad.models import TranslatableModel, TranslatedFields
 from django_s3_storage.storage import S3Storage
 import markdown
 
+from cmz_files.helpers import replace_cmz_files
+
 # Create your models here.
 class BlogPost(TranslatableModel):
     header_image = models.ImageField(null=True, blank=True,
@@ -22,7 +24,7 @@ class BlogPost(TranslatableModel):
     )
 
     def html_body(self):
-        return markdown.markdown(self.body)
+        return markdown.markdown(replace_cmz_files(self.body))
 
     def html_intro(self):
         return markdown.markdown(self.intro)
@@ -32,3 +34,13 @@ class BlogPost(TranslatableModel):
 
     class Meta:
         ordering = ['-date']
+
+
+# Receive the pre_delete signal and delete the file associated with the model instance.
+from django.db.models.signals import pre_delete
+from django.dispatch.dispatcher import receiver
+
+@receiver(pre_delete, sender=BlogPost)
+def mymodel_delete(sender, instance, **kwargs):
+    # Pass false so FileField doesn't save the model.
+    instance.header_image.delete(False)
