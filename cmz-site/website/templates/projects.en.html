@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations cmz_portfolio %}
+
+{% block page_content %}
+
+<section id="two" class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-xs-center">
+        <h2 class="m-t-0 text-primary">Progetti</h2>
+        <hr class="primary">
+        <p class="lead">
+          Our software solutions are based on mature and successuful Open Source components, languages and frameworks
+          that we select and build upon constantly.
+        </p>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container wow fadeInUp">
+    {% portfolio_list 3 as portfolio_items %}
+    {% for group in portfolio_items %}
+    <div class="card-group">
+        <!-- card -->
+        {% for portfolio_item in group %}
+        <div class="card p-x-0">
+            <div class="bg-primary"
+            style="height:150px; background-position:center center; background-size:cover;  {% if portfolio_item.header_image %} background-image:url({{portfolio_item.header_image.url}}); {% endif %}">
+            </div>
+            <div class="card-block">
+              <h4 class="card-title">
+                <a href="{% url 'project' portfolio_item.pk %}">{{portfolio_item.title}}</a>
+              </h4>
+              <p class="card-text">
+                {{ portfolio_item.html_intro|safe}}
+              </p>
+              <p class="card-text">
+                  {% for red_tag in portfolio_item.red_tags_list %}
+                  <span class="tag tag-danger">{{red_tag}}</span>
+                  {% endfor %}
+                  {% for blue_tag in portfolio_item.blue_tags_list %}
+                  <span class="tag tag-primary">{{blue_tag}}</span>
+                  {% endfor %}
+              </p>
+            </div>
+        </div>
+        {% endfor %}
+        {% if group|length < 3 %}
+        <div class="card" style="border:none">
+        </div>
+        {% endif %}
+        {% if group|length < 2 %}
+        <div class="card" style="border:none">
+        </div>
+        {% endif %}
+    </div>
+    {% endfor %}
+
+    </div>
+</section>
+
+{% endblock page_content %}
