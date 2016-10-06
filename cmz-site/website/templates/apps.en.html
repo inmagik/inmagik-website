@@ -1,0 +1,103 @@
+{% extends "base.html" %} {% load static from staticfiles %} {% load cmz_translations %} {% block page_content %}
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-xs-center">
+        <h2 class="m-t-0 text-primary">Mobile apps</h2>
+        <hr>
+        <p class="lead">
+          At INMAGIK we develop mobile apps with a focus on product quality and cost sustainability for
+          our clients, by offering different solutions based on the latest technologies.
+        </p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="card-group">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Native apps</h4>
+            <h6 class="card-subtitle text-muted">Powered by React Native</h6>
+          </div>
+          <div class="" style="height:250px; background-color:#222; background-position:center; background-size:contain; background-repeat:no-repeat; background-image:url({% static 'img/react-native.png' %})">
+          </div>
+          <!--<img src="{% static 'img/react-native.png' %}" class="img-fluid img-app m-x-auto" alt="Card image">-->
+          <div class="card-block">
+            <p class="card-text">
+              We build mobile apps for <strong>iOS</strong> e <strong>Android</strong> platforms using
+              <strong>React Native</strong>, a modern framework that allows developing mobile native apps in
+               Javascript, with a common code base for both platforms.
+            </p>
+            <p>
+              This allows us to implement multi-platform apps with the best performance and native look and feel,
+              limiting development, maintenance and upgrading costs in the short and long term.
+            </p>
+            <a href="https://facebook.github.io/react-native/" target="_blank"
+              class="card-link">Official React Native website</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">App Ibride</h4>
+            <h6 class="card-subtitle text-muted">Powered by Ionic Framework</h6>
+          </div>
+          <div class="" style="height:250px; background-color:#2A6AD4; background-position:center; background-size:contain; background-repeat:no-repeat; background-image:url({% static 'img/ionic1.jpg' %})">
+          </div>
+          <!--<img src="{% static 'img/ionic1.jpg' %}" class="img-fluid img-app m-x-auto" alt="Card image">-->
+          <div class="card-block">
+            <p class="card-text">
+              We develop hybrid mobile apps for <strong>iOS</strong>, <strong>Android</strong> e <strong>Windows Mobile</strong> platforms
+              using <strong>Ionic Framework</strong>, a modern framework that allows multi platform app development
+              with Javascript, HTML and Sass, with performances and look and feel very close to native, in particular
+              on modern mobile devices.
+            <p>
+              Thanks to a common code base, speed and ease of development guaranteed by the usage of web components
+              and technologies, this approach may be very interesting for projects with a limited budget, with the perfect
+              compromise between cost, performance and features.
+            </p>
+            <a href="http://ionicframework.com/" target="_blank"
+            class="card-link">Official Ionic Framework website</a>
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="card text-xs-center">
+
+          <div class="card-block">
+            <h3 class="card-title">Which technology should your choose?</h3>
+            <div class="cart-text">
+              If you want to build a mobile app contact us for a free advice
+              on the technology you might use and for a feasibility study of your project.
+            </div>
+            <hr>
+            <div class="cart-text">
+            <p>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Contattaci</a>
+            </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBaPSPrkbZLnJt_5RX1U-vmzJRYOJF4ZJA&center=-33.9,151.14999999999998&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360">
+</script>
+
+{% endblock page_content %}

@@ -1,4 +1,9 @@
-{% load static from staticfiles %} {% load cmz_translations %}
+{% load static from staticfiles %}
+{% load cmz_translations %}
+{% load i18n %}
+
+{% get_current_language as LANGUAGE_CODE %}
+{% get_available_languages as LANGUAGES %}
 
 <nav id="topNav" class="navbar navbar-default navbar-shadowed navbar-fixed-top">
   <div class="container">
@@ -29,11 +34,14 @@
           <a class="nav-link page-scroll" href="{% url 'contact' %}">{% cmz_translation "contact" "navbar" %}</a>
         </li>
         <li class="nav-item dropdown pull-md-right">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lang</a>
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{LANGUAGE_CODE}}</a>
           <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">IT</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">EN</a>
+            <a class="dropdown-item" href="/it">
+              <span class="flag-icon flag-icon-it"></span> IT
+            </a>
+            <a class="dropdown-item" href="/en">
+              <span class="flag-icon flag-icon-gb"></span> EN
+            </a>
           </div>
         </li>
       </ul>
@@ -62,9 +70,12 @@
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lang</a>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">IT</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">EN</a>
+          <a class="dropdown-item" href="/it">
+            <span class="flag-icon flag-icon-it"></span> IT
+          </a>
+          <a class="dropdown-item" href="/en">
+            <span class="flag-icon flag-icon-gb"></span> EN
+          </a>
         </div>
       </li>
     </ul>

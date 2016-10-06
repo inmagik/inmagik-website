@@ -1,0 +1,167 @@
+{% extends "base.html" %} {% load static from staticfiles %} {% load cmz_translations %} {% block page_content %}
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-xs-center">
+        <h2 class="m-t-0 text-primary">Web development</h2>
+        <hr>
+        <p class="lead">
+          At INMAGIK we develop websites and web applications leveraging all the power and features
+          of modern browsers. We build interfaces and interactive user experiences customizable
+          at pixel level.
+        </p>
+      </div>
+    </div>
+    <hr>
+
+    <div class="card-group">
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Static websites</h4>
+            <h6 class="card-subtitle text-muted">Powered by HTML5</h6>
+          </div>
+          <img src="{% static 'img/web1.jpg' %}" class="img-fluid img-web" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              We build static HTML5 websites, with focus on usability on all devices and maximizing
+              the impact of your content.
+            </p>
+            <p>
+              Our webistes can be adaped to different needs and budges, also for graphic design that
+              can be managed by us in collaboration with specialized graphic agencies and freelance designers,
+              leverage templates available on the web, or with specifications and designs by our final clients.
+            </p>
+            <!--
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+            -->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">CMS</h4>
+            <h6 class="card-subtitle text-muted">Powered by Django</h6>
+          </div>
+          <img src="{% static 'img/web2.jpg' %}" class="img-fluid img-web" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              INMAGIK offers personalized CMS solutions that allow an autonomous management of content and
+              website behavior, with  a simple and effective interface and completely customizable frontend design.
+            </p>
+            <p>
+              Our CMS solutions allows to manage various kind of content, think of text, images, geographic informations,
+              and are build around the concept of a strong separation between the website programming and the user
+              content.
+            </p>
+            <p>
+              Our approach aims to solve problems typical of platforms like Wordpress, Drupal or Joomla,
+              due to complexity of administration interfaces, security and long term maintenance costs.
+            </p>
+            <!--
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+            -->
+          </div>
+        </div>
+
+      </div>
+      <p>
+
+      </p>
+      <div class="card-group">
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Web appliacations and management software</h4>
+            <h6 class="card-subtitle text-muted">Powered by Django, HTML5 and ES2015</h6>
+          </div>
+          <img src="{% static 'img/web3.jpg' %}" class="img-fluid img-web" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              We build web based applications and web-based management software for handling
+              data, workflows, we implement dashboard an control panels adaptable to many application fields.
+            </p>
+            <p>
+              Our applications can integrate document management features, CMS, charting,
+              geographic information systems (GIS).
+              We offer complete solutions o interfaces for existing systems.
+            </p>
+            <!--
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+            -->
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-block">
+            <h4 class="card-title">Custom solutions</h4>
+            <h6 class="card-subtitle text-muted">Powered by our <a href="{% url 'technology' %}">tech and skills</a></h6>
+          </div>
+          <img src="{% static 'img/web4.jpg' %}" class="img-fluid img-web" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">
+              We build custom solutions using a wide range of technologies covering all needs of
+              applications and web based backends systems.
+            </p>
+            <p>
+              Our solutions include: complete frontend-backend systems, REST APIs implementations,
+              interfaces to SQL and NOSql databases, web solutions on embedded platforms,
+              geographic data management, system integrations.
+            </p>
+            <!--
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
+            -->
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <div class="card text-xs-center">
+
+          <div class="card-block">
+            <h3 class="card-title">For web and graphic agencies</h3>
+            <p class="card-text">
+              We collaborate with web agencies, graphics and communication studios
+              for implementing dynamic appliacations and websites.
+            </p>
+            <p class="card-text">
+              Contact us for a quotation and a feasibility study of your projects
+              with our technologies and for exploring new features that you could
+              offer to your clients. You can access our advanced skills and bring more value
+              to your final customers.
+            </p>
+            <hr>
+            <div class="card-text">
+            <p>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Contact us</a>
+            </p>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+</section>
+
+
+
+
+<script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyBaPSPrkbZLnJt_5RX1U-vmzJRYOJF4ZJA&center=-33.9,151.14999999999998&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0x212121&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x757575&style=element:labels.text.stroke%7Ccolor:0x212121&style=feature:administrative%7Celement:geometry%7Ccolor:0x757575&style=feature:administrative.country%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:administrative.land_parcel%7Cvisibility:off&style=feature:administrative.locality%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.park%7Celement:geometry%7Ccolor:0x181818&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:poi.park%7Celement:labels.text.stroke%7Ccolor:0x1b1b1b&style=feature:road%7Celement:geometry.fill%7Ccolor:0x2c2c2c&style=feature:road%7Celement:labels.text.fill%7Ccolor:0x8a8a8a&style=feature:road.arterial%7Celement:geometry%7Ccolor:0x373737&style=feature:road.highway%7Celement:geometry%7Ccolor:0x3c3c3c&style=feature:road.highway.controlled_access%7Celement:geometry%7Ccolor:0x4e4e4e&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:transit%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:water%7Celement:geometry%7Ccolor:0x000000&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x3d3d3d&size=480x360">
+</script>
+
+{% endblock page_content %}
