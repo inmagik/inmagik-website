@@ -25,27 +25,81 @@
             <div class="card">
                 <img class="card-img-top img-fluid" src="{% static 'img/123.jpg' %}" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="card-title">Sviluppo applicazioni mobile</h4>
-                    <p class="card-text">Sviluppiamo applicazioni ibride e native per le piattaforme iOS e Android, utilizzando framework e tecnologie di ultima generazione.</p>
+                  <h4 class="card-title">Mobile apps</h4>
+                  <p class="card-text">We develop native and hybrid mobile apps for iOS and Android, with modern frameworks and technologies.</p>
+
+                  <p class="card-text">
+                    Learn more on the
+                    <a href="{% url 'apps' %}">app develompent</a> section of the site.
+                  </p>
+                  <p class="card-text text-xs-center">
+                    <a class="btn btn-primary" href="{% url 'apps' %}">Learn more</a>.
+                  </p>
                 </div>
             </div>
             <!-- card -->
             <div class="card">
                 <img class="card-img-top img-fluid" src="{% static 'img/consulenza.jpg' %}" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="card-title">Consulenza su prodotti open source</h4>
-                    <p class="card-text">Offriamo servizi di consulenza sugli strumenti e i frameworks che utilizziamo nei nostri processi di sviluppo. Puoi trovare la lista degli strumenti che utilizziamo nella nostra pagina <a href="{% url 'technology' %}">tecnologia</a>.</p>
+                    <h4 class="card-title">Open source consultancy</h4>
+                    <p class="card-text">We offer consultancy about tools and framework we use for our development.
+                        See le complete list of the tools and technologies on our <a href="{% url 'technology' %}">tech</a> page.
+                    </p>
                 </div>
             </div>
             <!-- card -->
             <div class="card">
                 <img class="card-img-top img-fluid" src="{% static 'img/code.jpg' %}" alt="Card image cap">
                 <div class="card-block">
-                    <h4 class="card-title">Siti e applicativi web</h4>
-                    <p class="card-text">Lo sviluppo di siti e applicativi web, in tutte le sue declinazioni, è il nostro core business e sviluppiamo le nostre competenze intorno a questa attività.</p>
+                    <h4 class="card-title">Websites and applications</h4>
+                    <p class="card-text">
+                      Website and web applications development is our core business.
+                      We develop websites, complete client-server solutions, web based backends, CMS and
+                      custom web applications using HTML5, javascript and Python.
+                    </p>
+                    <p class="card-text">
+                      See all the details in our <a href="{% url 'technology' %}">web development</a> section.
+                    </p>
+                    <p class="card-text text-xs-center">
+                      <a class="btn btn-primary" href="{% url 'apps' %}">Learn more</a>.
+                    </p>
                 </div>
             </div>
         </div>
+
+
+        <hr>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2 text-xs-center">
+                <div class="card text-xs-center">
+
+                  <div class="card-block">
+                    <h2 class="card-title">Free check-up</h2>
+                    <p class="lead card-text">
+                      You want to update, restyle or add more features to an existing web site
+                      or mobile app?
+                    </p>
+                    <p class="lead card-text">
+                      <a href="{% url 'contact' %}">Contact us</a> for a free check-up
+                      and a feasibility study based on your needs.
+                    </p>
+                    <hr>
+                    <div class="cart-text">
+                    <p>
+                        <a href="{% url 'contact' %}" class="btn btn-primary">Contact us</a>
+                    </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+
+
+
     </div>
 </section>
 <section id="two" class="bg-alt">
@@ -55,14 +109,12 @@
                 <h2 class="m-t-0 text-primary">We <i class="icon-sm ion-ios-heart-outline wow fadeIn text-primary"></i> Open Source</h2>
                 <hr class="primary">
                 <p class="lead">
-                  Lavoriamo utilizzando e promuovendo la crescita di strumenti e frameworks
-                  opensource, rendendo disponibili ai nostri clienti le ultime tecnologie software disponibili a
-                  livello mondiale.
+                  We work using and promiting the growth of open source languages, tools and frameworks,
+                  bringing our clients the latest software technologies.
                 </p>
                 <p class="lead">
-                  Per i nostri clienti questo significa <i>nessun costo di licenza imposto</i> per l'utilizzo
-                  dei nostri prodotti e <i>nessun limite</i> alla realizzazione di funzionalità avanzate all'interno
-                  del nostro software.
+                  For our clients this means <i>no imposed license fees</i> for using our products and <i>no limits</i>
+                  to the functionalities we can add to your software.
                 </p>
             </div>
         </div>
@@ -72,10 +124,11 @@
     <div class="container wow fadeInUp">
         <div class="row">
             <div class="col-lg-12 text-xs-center">
-                <h2 class="m-t-0 text-primary">Sviluppo multipiattaforma</h2>
+                <h2 class="m-t-0 text-primary">Multi platform</h2>
                 <hr class="primary">
                 <p class="lead">
-
+                  INMAGIK builds multi-platform software and integrated solutions
+                  for all your needs.
                 </p>
             </div>
         </div>
@@ -85,8 +138,8 @@
                     <i class="icon-lg ion-ios-cloud-outline wow fadeIn" data-wow-delay=".1s"></i>
                     <h6 class="text-uppercase">server</h6>
                     <p class="text-muted m-b-0">
-                      Realizziamo backend e applicativi gestionali basati su database
-                      SQL o NOSql, API rest, script di migrazione, sincronizzazione e trasformazione dati.
+                      We build backends and management web apps based on SQL or NOSql databases, rest APIs,
+                      data migration, synchronization and transformation tools.
                     </p>
                 </div>
             </div>
@@ -95,9 +148,9 @@
                     <i class="icon-lg ion-ios-browsers-outline wow fadeInUp"></i>
                     <h6 class="text-uppercase">browser</h6>
                     <p class="text-muted m-b-0">
-                      Sviluppiamo siti web e applicativi responsive e applicativi gestionali web-based
-                      con funzionalità avanzate di integrazione social, visualizzazione dati e infografiche,
-                      gestione di dati geografici.
+                      We build responsive websites and web based applications with advanced functionalities
+                      such as social integrations, infographics and data visualization, geographic data
+                      management.
                     </p>
                 </div>
             </div>
@@ -106,7 +159,7 @@
                     <i class="icon-lg ion-iphone wow fadeIn" data-wow-delay=".1s"></i>
                     <h6 class="text-uppercase">mobile</h6>
                     <p class="text-muted m-b-0">
-                      Realizziamo applicazioni per smartphone e tablet, su piattaforme iOS, Android e Windows Mobile.
+                      We build apps for smartphones and tablets, for iOS, Android e Windows Mobile platforms.
                     </p>
                 </div>
             </div>

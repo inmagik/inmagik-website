@@ -5038,6 +5038,25 @@ img::-moz-selection {
     .navbar-toggleable-sm ul {
       padding-top: 60px;
       padding-bottom: 40px; } }
+.mobile-menu {
+  position: fixed;
+  top: 54px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-color: #fff;
+  padding-top: 50px;
+  overflow-y: scroll; }
+
+@media (width: 768px) {
+  .mobile-menu.collapse {
+    display: none !important; }
+
+  .mobile-menu.collapse.in {
+    display: block !important; }
+
+  .show-at-768 {
+    display: inline-block !important; } }
 .scrolled .navbar-shadowed {
   box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.25); }
 
