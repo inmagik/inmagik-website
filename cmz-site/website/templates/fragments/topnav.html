@@ -1,59 +1,73 @@
-{% load static from staticfiles %}
-{% load cmz_translations %}
+{% load static from staticfiles %} {% load cmz_translations %}
 
 <nav id="topNav" class="navbar navbar-default navbar-shadowed navbar-fixed-top">
-    <div class="container">
-        <button class="navbar-toggler hidden-md-up show-at-768 pull-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-            ☰
-        </button>
-        <a class="navbar-brand page-scroll" href="{% url 'home' %}">
-          <img class="img-navbar-logo"
-          src="{% static 'img/inmagik_circle2.png' %}" alt="Inmagik logo" />
-        </a>
-        <div class="hidden-sm-down xcollapse xnavbar-toggleable-sm">
-            <ul class="nav navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'apps' %}">app</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'web' %}">web</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'technology' %}">{% cmz_translation "tech" "navbar" %}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'projects' %}">{% cmz_translation "projects" "navbar" %}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'blog' %}">{% cmz_translation "blog" "navbar" "blog" %}</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link page-scroll" href="{% url 'contact' %}">{% cmz_translation "contact" "navbar" %}</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="hidden-md-up collapse mobile-menu" id="collapsingNavbar">
-      <ul class="nav navbar-nav text-xs-center">
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="{% url 'apps' %}">app</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="{% url 'web' %}">web</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="{% url 'technology' %}">{% cmz_translation "tech" "navbar" %}</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="{% url 'projects' %}">{% cmz_translation "projects" "navbar" %}</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="{% url 'blog' %}">{% cmz_translation "blog" "navbar" "blog" %}</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link page-scroll" href="{% url 'contact' %}">{% cmz_translation "contact" "navbar" %}</a>
-          </li>
+  <div class="container">
+    <button class="navbar-toggler hidden-md-up show-at-768 pull-xs-right" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+      ☰
+    </button>
+    <a class="navbar-brand page-scroll" href="{% url 'home' %}">
+      <img class="img-navbar-logo" src="{% static 'img/inmagik_circle2.png' %}" alt="Inmagik logo" />
+    </a>
+    <div class="hidden-sm-down xcollapse xnavbar-toggleable-sm">
+      <ul class="nav navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'apps' %}">app</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'web' %}">web</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'technology' %}">{% cmz_translation "tech" "navbar" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'projects' %}">{% cmz_translation "projects" "navbar" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'blog' %}">{% cmz_translation "blog" "navbar" "blog" %}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link page-scroll" href="{% url 'contact' %}">{% cmz_translation "contact" "navbar" %}</a>
+        </li>
+        <li class="nav-item dropdown pull-md-right">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lang</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">IT</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">EN</a>
+          </div>
+        </li>
       </ul>
-
     </div>
+  </div>
+  <div class="hidden-md-up collapse mobile-menu" id="collapsingNavbar">
+    <ul class="nav navbar-nav text-xs-center">
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="{% url 'apps' %}">app</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="{% url 'web' %}">web</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="{% url 'technology' %}">{% cmz_translation "tech" "navbar" %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="{% url 'projects' %}">{% cmz_translation "projects" "navbar" %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="{% url 'blog' %}">{% cmz_translation "blog" "navbar" "blog" %}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link page-scroll" href="{% url 'contact' %}">{% cmz_translation "contact" "navbar" %}</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lang</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">IT</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">EN</a>
+        </div>
+      </li>
+    </ul>
+
+  </div>
 </nav>
