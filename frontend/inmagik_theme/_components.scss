@@ -166,6 +166,18 @@
 .footer-info {
   padding:20px;
 }
+
+.btn-footer{
+  margin-top: 10px;
+  color: $white;
+  background-color:  $brand-primary;
+  border: 0.25px solid $white;
+  &:hover {
+    background-color: $brand-secondary;
+    border: 0.25px solid $white;
+  }
+}
+
 //Fonts components
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;

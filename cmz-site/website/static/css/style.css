@@ -5156,6 +5156,15 @@ img::-moz-selection {
 .footer-info {
   padding: 20px; }
 
+.btn-footer {
+  margin-top: 10px;
+  color: #fff;
+  background-color: deepskyblue;
+  border: 0.25px solid #fff; }
+  .btn-footer:hover {
+    background-color: #bebebe;
+    border: 0.25px solid #fff; }
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
