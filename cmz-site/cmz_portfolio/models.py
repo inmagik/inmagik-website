@@ -6,6 +6,8 @@ from hvad.models import TranslatableModel, TranslatedFields
 from django_s3_storage.storage import S3Storage
 import markdown
 
+from cmz_files.helpers import replace_cmz_files
+
 # Create your models here.
 class PortfolioItem(TranslatableModel):
     header_image = models.ImageField(null=True, blank=True,
@@ -32,7 +34,7 @@ class PortfolioItem(TranslatableModel):
 
 
     def html_body(self):
-        return markdown.markdown(self.body)
+        return markdown.markdown(replace_cmz_files(self.body))
 
     def html_intro(self):
         return markdown.markdown(self.intro)
