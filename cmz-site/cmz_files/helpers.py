@@ -1,7 +1,7 @@
 import re
 from .models import NamedFile
 
-CMS_FILE_REGEXP = r'([\[(]cmz-file://)(?P<name>.+)([\])])'
+CMS_FILE_REGEXP = r'([\[("]cmz-file://)(?P<name>.+)([\])"])'
 cms_file_regexp = re.compile(CMS_FILE_REGEXP)
 
 
