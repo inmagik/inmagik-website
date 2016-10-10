@@ -5090,6 +5090,9 @@ img::-moz-selection {
   width: 36px;
   display: inline-block; }
 
+.icon-header {
+  font-size: 30px; }
+
 .img-tech {
   max-height: 100px;
   height: 100px;
