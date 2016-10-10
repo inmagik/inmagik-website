@@ -5099,7 +5099,7 @@ img::-moz-selection {
   margin-top: 24px; }
 
 .img-projects {
-  height: 200px; }
+  max-height: 200px; }
 
 .img-app {
   height: 250px;
