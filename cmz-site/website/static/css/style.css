@@ -5091,15 +5091,15 @@ img::-moz-selection {
   display: inline-block; }
 
 .icon-header {
-  font-size: 30px; }
+  font-size: 30 px; }
 
 .img-tech {
   max-height: 100px;
   height: 100px;
   margin-top: 24px; }
 
-.img-proj {
-  max-height: 210px; }
+.img-projects {
+  height: 200px; }
 
 .img-app {
   height: 250px;

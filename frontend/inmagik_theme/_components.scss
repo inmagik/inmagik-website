@@ -83,7 +83,8 @@
 
 //header components
 .icon-header {
-  font-size: 30px;
+  font-size: 30
+  px;
 }
 
 //Card's images components
@@ -93,8 +94,12 @@
   margin-top: 24px;
 }
 
-.img-proj {
-  max-height: 210px;
+.img-detail {
+  //max-height: 500px;
+}
+
+.img-projects {
+  height: 200px;
 }
 
 .img-app {

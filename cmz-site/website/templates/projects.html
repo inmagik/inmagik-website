@@ -25,13 +25,13 @@
         <!-- card -->
         {% for portfolio_item in group %}
         <div class="card p-x-0">
-            <!--
-            <div class="bg-primary"
+<!--
+            <div class="bg-primary img-fluid"
             style="height:250px; background-position:center center; background-size:cover;  {% if portfolio_item.header_image %} background-image:url({{portfolio_item.header_image.url}}); {% endif %}">
             </div>
-            -->
-            <img class="img-fluid" alt="" src="{% if portfolio_item.header_image %}{{portfolio_item.header_image.url}}{% endif %}"/>
-            <div class="card-block">
+          -->
+          <img class="card-img-top img-fluid img-projects" src="{{portfolio_item.header_image.url}}" alt="" />
+          <div class="card-block">
               <h4 class="card-title">
                 <a href="{% url 'project' portfolio_item.pk %}">{{portfolio_item.title}}</a>
               </h4>
