@@ -10,24 +10,16 @@
 <section id="two" class="bg-alt">
 
     <div class="container">
-      <div class="" style="">
-        <!--<div class="thumbnail" {% if portfolio_item.header_image %}style="background-image:url({{portfolio_item.header_image.url}})"{% endif %}>-->
         <div class="text-xs-center">
+          <h2 class="primary text-xs-center">{{portfolio_item.title}}</h2>
           <img class="img-fluid w-100" src="{{portfolio_item.header_image.url}}" alt="">
         </div>
       </div>
-      <p class="main">
-        <h2 class="primary text-xs-center">{{portfolio_item.title}}</h2>
-      </div>
-    </div>
+
     <div class="container">
-      <!--
-          <img class="w-100 img-blog-detail" src="img/blog1.jpg" alt="" />
-        -->
       <div class="col-lg-2"></div>
 
       <div class="col-lg-8">
-        <!--<img class="img-fluid w-100 img-detail" src="{{portfolio_item.header_image.url}}" alt="">-->
         <hr class="primary">
         <p class="date text-xs-right"><i class="ion-ios-calendar-outline"></i> {{portfolio_item.created}}</p>
         <p class="card-text">
