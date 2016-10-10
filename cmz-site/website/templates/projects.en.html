@@ -26,10 +26,8 @@
         <!-- card -->
         {% for portfolio_item in group %}
         <div class="card p-x-0">
-           <div class="bg-primary"
-            style="height:150px; background-position:center center; background-size:cover;  {% if portfolio_item.header_image %} background-image:url({{portfolio_item.header_image.url}}); {% endif %}">
-          </div>
-            <div class="card-block">
+          <img class="card-img-top img-fluid img-projects" src="{% if portfolio_item.header_image %}{{portfolio_item.header_image.url}}{% endif %}" alt="" />
+          <div class="card-block">
               <h4 class="card-title">
                 <a href="{% url 'project' portfolio_item.pk %}">{{portfolio_item.title}}</a>
               </h4>
