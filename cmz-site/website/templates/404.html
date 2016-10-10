@@ -1,0 +1,16 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Page not found</title>
+    <link rel="stylesheet" href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <h2>Oops, this page does not exists!</h2>
+    <p>
+      The page {{request_path}} does not exist on our server
+    </p>
+  </body>
+</html>
