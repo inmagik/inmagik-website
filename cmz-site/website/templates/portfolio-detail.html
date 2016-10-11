@@ -12,7 +12,7 @@
     <div class="container">
         <div class="text-xs-center">
           <h2 class="primary text-xs-center">{{portfolio_item.title}}</h2>
-          <img class="img-fluid w-100" src="{{portfolio_item.header_image.url}}" alt="">
+          <img class="img-fluid w-100" src="{% if portfolio_item.header_image %}{{portfolio_item.header_image.url}}{% endif %}" alt="">
         </div>
       </div>
 
