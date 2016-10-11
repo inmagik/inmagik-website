@@ -5144,7 +5144,8 @@ img::-moz-selection {
 
 .btn-check:hover {
   background-color: deepskyblue;
-  color: #fff; }
+  color: #fff;
+  text-decoration: none; }
 
 .foot {
   color: #fff;
