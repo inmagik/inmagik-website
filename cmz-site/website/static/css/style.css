@@ -5108,6 +5108,10 @@ img::-moz-selection {
 .img-web {
   width: 100%; }
 
+.img-check {
+  width: 150px;
+  height: auto; }
+
 .img-blog-detail {
   position: relative; }
 
@@ -5137,6 +5141,10 @@ img::-moz-selection {
   font-size: 14px;
   color: #bebebe;
   font-style: italic; }
+
+.btn-check:hover {
+  background-color: deepskyblue;
+  color: #fff; }
 
 .foot {
   color: #fff;

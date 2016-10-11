@@ -52,7 +52,9 @@ SITE_PAGES = {
         'url' : 'cookie-policy',
     },
 
-
+    'test-your-site' : {
+        'url' : 'test-your-site',
+    },
     # 'items' : {
     #     'url' : 'items',
     #     'extra_modules' : []

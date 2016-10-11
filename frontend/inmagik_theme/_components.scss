@@ -107,6 +107,11 @@
   width: 100%;
 }
 
+.img-check {
+  width: 150px;
+  height: auto;
+}
+
 //Blog components
  .img-blog-detail {
    position: relative;
@@ -143,7 +148,13 @@
   color: $brand-secondary;
   font-style: italic;
 }
-
+//test-your-site components
+.btn-check {
+  &:hover {
+    background-color: $brand-primary;
+    color: $white;
+  }
+}
  //Footer components
 .foot {
   color: $white;

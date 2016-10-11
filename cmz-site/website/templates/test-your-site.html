@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% load static from staticfiles %}
+{% load cmz_translations %}
+
+{% block page_content %}
+
+<section class="bg-alt">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h2 class="m-t-0 text-primary text-xs-center">Check-up del sito</h2>
+        <hr class="primary">
+        <p>
+          Contattaci per un check-up del tuo sito, faremo un analisi accurata della tua pagina web.<br/>
+          I risultati di questo controllo, evidenzieranno eventuali inedeguatezze nel codice o nella struttura del sito, con particolare riguardo ai problemi legati alla navigazione e alla usabilità.
+        </p>
+
+        <div class="card">
+          <img class="card-img-top img-fluid" src="{% static 'img/check-up1.jpg' %}" alt="Card image cap">
+          <div class="card-block">
+            <h4 class="text-primary">Interventi</h4>
+            <p class="card-text">Ecco le aree in cui interveniamo per migliorare e per rendere più moderno il tuo sito web.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <div class="media">
+                <a class="media-left" href="#">
+                  <img class="media-object img-check img-rounded" src="{% static 'img/responsive1.jpg' %}" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h6 class="media-heading">Sito Responsive</h6>
+                  <p>Grazie ad un layout responsive il sito sarà facimente navigabile anche da Smatphone e Tablet.</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media">
+                <a class="media-left" href="#">
+                  <img class="media-object img-check img-rounded" src="{% static 'img/cookie1.jpg' %}" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h6 class="media-heading">Cookie</h6>
+                  <p>Per fare in modo che il sito sia in linea con le normative vigenti e per migliorare l'user experience.</p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media">
+                <a class="media-left" href="#">
+                  <img class="media-object img-check img-rounded" src="{% static 'img/padlock1.jpg' %}" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h6 class="media-heading">https</h6>
+                  <p>Rendi più sicuro il tuo sito con un dominio <strong>https</strong></p>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="media">
+                <a class="media-left" href="#">
+                  <img class="media-object img-check img-rounded" src="{% static 'img/dinamic-site1.jpg' %}" alt="Generic placeholder image">
+                </a>
+                <div class="media-body">
+                  <h6 class="media-heading">Sito Dinamico</h6>
+                  <p>Rendiamo il tuo sito "dinamico", in modo da renderti indipendente nel cambiare il contenuto del tuo sito.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="card-block">
+            <h4 class="text-xs-center">Fai il check-up del tuo sito</h4>
+            <hr class="primary">
+            <!--
+            <div class="form-group row">
+              <label for="example-text-input" class="col-xs-3 col-form-label">Indirizzo Sito</label>
+              <div class="col-xs-9">
+                <input class="form-control" type="text" value="" id="example-text-input">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="example-search-input" class="col-xs-3 col-form-label">Email</label>
+              <div class="col-xs-9">
+                <input class="form-control" type="search" value="" id="example-search-input">
+              </div>
+          </div>
+          <button type="submit" class="btn btn-primary pull-xs-right">Esegui Check-up</button>
+        -->
+         <a href="mailto:info@inmagik.com"><button class="btn btn-primary btn-lg btn-block btn-check">Contattaci</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock page_content %}
