@@ -55,6 +55,7 @@ SITE_PAGES = {
     'test-your-site' : {
         'url' : 'test-your-site',
     },
+
     # 'items' : {
     #     'url' : 'items',
     #     'extra_modules' : []
