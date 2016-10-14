@@ -2,3 +2,4 @@ django-s3-storage==0.9.10
 Markdown==2.6.7
 psycopg2==2.6.2
 djangorestframework-jwt==1.8.0
+django-social-widgets==0.4.0
