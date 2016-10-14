@@ -41,6 +41,7 @@ try:
     AWS_S3_BUCKET_NAME = "inmagikweb"
     AWS_REGION = "eu-central-1"
     AWS_S3_GZIP = True
+    AWS_S3_MAX_AGE_SECONDS = 60*60*24*10  # 10 days.
     #DEFAULT_FILE_STORAGE = "django_s3_storage.storage.S3Storage".
 except:
     raise
