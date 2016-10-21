@@ -5154,7 +5154,8 @@ img::-moz-selection {
     color: #fff;
     font-weight: normal; }
     .foot a:hover {
-      color: #bebebe; }
+      color: #bebebe;
+      text-decoration: none; }
   .foot h6 {
     color: #fff; }
 
@@ -5175,7 +5176,8 @@ img::-moz-selection {
   border: 0.25px solid #fff; }
   .btn-footer:hover {
     background-color: #bebebe;
-    border: 0.25px solid #fff; }
+    border: 0.25px solid #fff;
+    text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }

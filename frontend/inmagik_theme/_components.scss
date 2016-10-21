@@ -156,6 +156,7 @@
     text-decoration: none;
   }
 }
+
  //Footer components
 .foot {
   color: $white;
@@ -165,6 +166,7 @@
     font-weight: normal;
     &:hover {
       color: $brand-secondary;
+      text-decoration: none;
     }
   }
   h6 {
@@ -193,6 +195,7 @@
   &:hover {
     background-color: $brand-secondary;
     border: 0.25px solid $white;
+    text-decoration: none;
   }
 }
 
