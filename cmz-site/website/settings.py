@@ -77,21 +77,21 @@ JWT_AUTH = {
 
 
 CMZ_SEO = {
-    "description" : "Inmagik is a software development agency based in Bergamo, Italy",
+    "description" : "Inmagik is a software, web and apps development agency based in Bergamo, Italy",
     "twitter:creator" : "@inmagiklabs",
     "twitter:site" : "@inmagiklabs",
     "twitter:description" : "Inmagik is a software development agency based in Bergamo, Italy",
-    "twitter:title" : "Inmagik software development"
+    "twitter:title" : "Inmagik software, web and apps development."
 }
 
 
 CMZ_SEO_LANGS = {
     "it" : {
-        "description" : "Inmagik è un'agenzia di sviluppo software con sede a Bergamo.",
+        "description" : "Inmagik è un'agenzia di sviluppo software, web e app con sede a Bergamo.",
         "twitter:creator" : "@inmagiklabs",
         "twitter:site" : "@inmagiklabs",
-        "twitter:description" : "Inmagik è un'agenzia di sviluppo software con sede a Bergamo",
-        "twitter:title" : "Inmagik sviluppo software"
+        "twitter:description" : "Inmagik è un'agenzia di sviluppo software, web e app con sede a Bergamo",
+        "twitter:title" : "Inmagik sviluppo software, siti web e applicazioni."
     }
 
 }
