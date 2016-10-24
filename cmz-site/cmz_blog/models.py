@@ -24,10 +24,10 @@ class BlogPost(TranslatableModel):
     )
 
     def html_body(self):
-        return markdown.markdown(replace_cmz_files(self.body))
+        return markdown.markdown(replace_cmz_files(self.body), extensions=['markdown.extensions.fenced_code'])
 
     def html_intro(self):
-        return markdown.markdown(self.intro)
+        return markdown.markdown(self.intro, extensions=['markdown.extensions.fenced_code'])
 
     def __unicode__(self):
         return self.title
