@@ -10,12 +10,15 @@ from cmz_files.helpers import replace_cmz_files
 
 # Create your models here.
 class BlogPost(TranslatableModel):
+    #todo: this should be named "slug" and be translated...
+    id = models.CharField(max_length=255, primary_key=True)
     header_image = models.ImageField(null=True, blank=True,
         upload_to="blog-images",
         storage=S3Storage())
     author = models.CharField(max_length=200, null=True, blank=True)
     date = models.DateField(blank=True, null=True)
     published = models.BooleanField(default=False)
+
 
     translations = TranslatedFields(
         title = models.CharField(max_length=255),

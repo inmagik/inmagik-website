@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import os
 SETTINGS_FOLDER = os.path.dirname(__file__)
 
@@ -13,14 +16,19 @@ LANGUAGE_CODE = 'it'
 
 
 SITE_MODULES = [
+    'django_s3_storage',
+    'social_widgets',
+
     'cms_content',
     'cmz_files',
+    'cmz_seo',
     'cms_news',
     'cms_cookieconsent',
     'cmz_translations',
     'cmz_blog',
     'cmz_portfolio',
     'technologies',
+
 
     'cmz_jwt_auth',
 
@@ -41,6 +49,8 @@ try:
     AWS_S3_BUCKET_NAME = "inmagikweb"
     AWS_REGION = "eu-central-1"
     AWS_S3_GZIP = True
+    #AWS_S3_BUCKET_AUTH = False
+    AWS_S3_MAX_AGE_SECONDS = 60*60*24*6  # 7 days.
     #DEFAULT_FILE_STORAGE = "django_s3_storage.storage.S3Storage".
 except:
     raise
@@ -63,4 +73,25 @@ REST_FRAMEWORK = {
 
 JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
+}
+
+
+CMZ_SEO = {
+    "description" : "Inmagik is a software, web and apps development agency based in Bergamo, Italy",
+    "twitter:creator" : "@inmagiklabs",
+    "twitter:site" : "@inmagiklabs",
+    "twitter:description" : "Inmagik is a software development agency based in Bergamo, Italy",
+    "twitter:title" : "Inmagik software, web and apps development."
+}
+
+
+CMZ_SEO_LANGS = {
+    "it" : {
+        "description" : "Inmagik è un'agenzia di sviluppo software, web e app con sede a Bergamo.",
+        "twitter:creator" : "@inmagiklabs",
+        "twitter:site" : "@inmagiklabs",
+        "twitter:description" : "Inmagik è un'agenzia di sviluppo software, web e app con sede a Bergamo",
+        "twitter:title" : "Inmagik sviluppo software, siti web e applicazioni."
+    }
+
 }

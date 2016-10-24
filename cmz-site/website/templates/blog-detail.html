@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% load static from staticfiles %}
 {% load cmz_translations cmz_blog %}
+{% load social_widgets %}
 
 {% block page_content %}
 
@@ -34,13 +35,21 @@
         </div>
 
 
-        </video>
+        <p class="social-widgets">
+          {% social_widget_render "facebook/share_button.html" href=request.build_absolute_uri %}
+        </p>
+        <p class="social_widgets">
+          {% social_widget_render "twitter/follow_button.html" username="inmagiklabs" %}
+          {% social_widget_render "twitter/share_button.html" href=request.build_absolute_uri %}
+        </p>
       </div>
 
       <div class="col-lg-2"></div>
     </div>
     <hr>
     <hr>
+
+
 
   </section>
 
