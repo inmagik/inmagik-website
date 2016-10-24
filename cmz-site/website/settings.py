@@ -81,7 +81,9 @@ CMZ_SEO = {
     "twitter:creator" : "@inmagiklabs",
     "twitter:site" : "@inmagiklabs",
     "twitter:description" : "Inmagik is a software development agency based in Bergamo, Italy",
-    "twitter:title" : "Inmagik software, web and apps development."
+    "twitter:title" : "Inmagik software, web and apps development.",
+
+    "og:type" : "website",
 }
 
 
