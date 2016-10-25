@@ -1,4 +1,3 @@
-#TEMPLATES WILL BE INFERRED BY NAMES
 
 SITE_PAGES = {
 
@@ -55,16 +54,6 @@ SITE_PAGES = {
     'test-your-site' : {
         'url' : 'test-your-site',
     },
-
-    # 'items' : {
-    #     'url' : 'items',
-    #     'extra_modules' : []
-    # },
-
-    # 'item-detail' : {
-    #     'url' : 'items/(?P<pk>\w+)',
-
-    # },
 
 
 
