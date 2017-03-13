@@ -16,22 +16,22 @@
     </a>
     <div class="hidden-sm-down xcollapse xnavbar-toggleable-sm">
       <ul class="nav navbar-nav">
-        <li class="nav-item">
+        <li class="nav-item hvr-underline-from-center">
           <a class="nav-link page-scroll {% ifactive 'apps' %}active{% endifactive %}" href="{% url 'apps' %}">app</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hvr-underline-from-center">
           <a class="nav-link page-scroll {% ifactive 'web' %}active{% endifactive %}" href="{% url 'web' %}">web</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hvr-underline-from-center">
           <a class="nav-link page-scroll {% ifactive 'technology' %}active{% endifactive %}" href="{% url 'technology' %}">{% cmz_translation "tech" "navbar" %}</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hvr-underline-from-center">
           <a class="nav-link page-scroll {% ifstartswith 'projects' %}active{% endifstartswith %}" href="{% url 'projects' %}">{% cmz_translation "projects" "navbar" %}</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hvr-underline-from-center">
           <a class="nav-link page-scroll {% ifstartswith 'blog' %}active{% endifstartswith %}" href="{% url 'blog' %}">{% cmz_translation "blog" "navbar" "blog" %}</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item hvr-underline-from-center">
           <a class="nav-link page-scroll {% ifactive 'contact' %}active{% endifactive %}" href="{% url 'contact' %}">{% cmz_translation "contact" "navbar" %}</a>
         </li>
         <li class="nav-item dropdown pull-md-right">
@@ -68,7 +68,7 @@
       <li class="nav-item">
         <a class="nav-link page-scroll {% ifactive 'contact' %}active{% endifactive %}" href="{% url 'contact' %}">{% cmz_translation "contact" "navbar" %}</a>
       </li>
-      
+
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Lang</a>
         <div class="dropdown-menu">
